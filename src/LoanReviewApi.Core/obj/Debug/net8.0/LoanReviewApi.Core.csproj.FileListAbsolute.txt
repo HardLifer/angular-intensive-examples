@@ -1,0 +1,12 @@
+C:\Users\hj7082z\source\repos\LoanReview\source\api\LoanReviewApi\LoanReviewApi.Core\bin\Debug\net8.0\LoanReviewApi.Core.deps.json
+C:\Users\hj7082z\source\repos\LoanReview\source\api\LoanReviewApi\LoanReviewApi.Core\bin\Debug\net8.0\LoanReviewApi.Core.dll
+C:\Users\hj7082z\source\repos\LoanReview\source\api\LoanReviewApi\LoanReviewApi.Core\bin\Debug\net8.0\LoanReviewApi.Core.pdb
+C:\Users\hj7082z\source\repos\LoanReview\source\api\LoanReviewApi\LoanReviewApi.Core\obj\Debug\net8.0\LoanReviewApi.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hj7082z\source\repos\LoanReview\source\api\LoanReviewApi\LoanReviewApi.Core\obj\Debug\net8.0\LoanReviewApi.Core.AssemblyInfoInputs.cache
+C:\Users\hj7082z\source\repos\LoanReview\source\api\LoanReviewApi\LoanReviewApi.Core\obj\Debug\net8.0\LoanReviewApi.Core.AssemblyInfo.cs
+C:\Users\hj7082z\source\repos\LoanReview\source\api\LoanReviewApi\LoanReviewApi.Core\obj\Debug\net8.0\LoanReviewApi.Core.csproj.CoreCompileInputs.cache
+C:\Users\hj7082z\source\repos\LoanReview\source\api\LoanReviewApi\LoanReviewApi.Core\obj\Debug\net8.0\LoanReviewApi.Core.sourcelink.json
+C:\Users\hj7082z\source\repos\LoanReview\source\api\LoanReviewApi\LoanReviewApi.Core\obj\Debug\net8.0\LoanReviewApi.Core.dll
+C:\Users\hj7082z\source\repos\LoanReview\source\api\LoanReviewApi\LoanReviewApi.Core\obj\Debug\net8.0\refint\LoanReviewApi.Core.dll
+C:\Users\hj7082z\source\repos\LoanReview\source\api\LoanReviewApi\LoanReviewApi.Core\obj\Debug\net8.0\LoanReviewApi.Core.pdb
+C:\Users\hj7082z\source\repos\LoanReview\source\api\LoanReviewApi\LoanReviewApi.Core\obj\Debug\net8.0\ref\LoanReviewApi.Core.dll

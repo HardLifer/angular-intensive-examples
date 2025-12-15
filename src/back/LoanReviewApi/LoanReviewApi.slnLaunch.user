@@ -1,0 +1,11 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "LoanReviewApi.Infrastructure\\LoanReviewApi.Infrastructure.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

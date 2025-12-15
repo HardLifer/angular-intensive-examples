@@ -1,0 +1,67 @@
+export interface LoanDetailDto {
+  id: number;
+  loanId: number;
+  balance: number | null;
+  ltv: number | null;
+  insuranceType: string | null;
+}
+
+export interface LoanDetailFullDto {
+  id: number;
+  loanId: number;
+  obs: number | null;
+  productBusinessGroupCode: string | null;
+  loanClass: string | null;
+  insuranceType: string | null;
+  variableRateFlag: string | null;
+  province: string | null;
+  ltv: number | null;
+  balance: number | null;
+  purpose: string | null;
+  beacon: number | null;
+  riskScore: number | null;
+  amortizationTermInMonths: number | null;
+  termInMonths: number | null;
+  securityTypeCode: number | null;
+  securityTypeDescription: string | null;
+  commitmentDate: string | null;
+  maturityDate: string | null;
+  applicantCifNumber: string | null;
+  brokerCompany: string | null;
+  effectiveRate: number | null;
+  exceptionFlag: string | null;
+  exceptionType: string | null;
+  originalTdsRatio: number | null;
+  loanConformingIndicator: string | null;
+  reasonCode: number | null;
+  scoringValue: number | null;
+  employmentType: string | null;
+  occupation: string | null;
+  income: number | null;
+  productText: string | null;
+  fundingDate: string | null;
+  priorEncCount: number | null;
+  priorEncAmount: number | null;
+  branchOfficeId: string | null;
+  branchOfficeText: string | null;
+  borrowerName: string | null;
+  underwriterSkey: string | null;
+  partnerName: string | null;
+  partnerId: string | null;
+  director: string | null;
+  date1: Date | null;
+  reviewType: string | null;
+  nonConformingReason: string | null;
+  mortgageOfficerBp: string | null;
+  mortgageOfficerName: string | null;
+  mortgageOfficerSkey: string | null;
+  aggRating: string | null;
+  prRating: string | null;
+  spRating: string | null;
+  userName: string | null;
+  stressTds: number | null;
+  isLocked: number | null;
+  createdAt: Date | null;
+  updatedAt: Date | null;
+  deletedAt: Date | null;
+}

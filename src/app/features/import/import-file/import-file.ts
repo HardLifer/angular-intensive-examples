@@ -1,33 +1,48 @@
-import { Component, signal } from '@angular/core';
+import { Component, signal, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatSelectModule } from '@angular/material/select';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { FormsModule } from '@angular/forms';
+import { ImportApiService } from '../../../core/services/import-api.service';
+import { ReviewTemplateType } from '../../../core/models/review-template.model';
 
 @Component({
   selector: 'app-import-file',
+  standalone: true,
   imports: [
     CommonModule,
+    FormsModule,
     MatCardModule,
     MatButtonModule,
     MatIconModule,
     MatProgressBarModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    MatSelectModule,
+    MatFormFieldModule
   ],
   templateUrl: './import-file.html',
   styleUrl: './import-file.scss',
 })
 export class ImportFile {
+  private importApiService = inject(ImportApiService);
+  private snackBar = inject(MatSnackBar);
+
   selectedFile = signal<File | null>(null);
   uploading = signal(false);
   uploadProgress = signal(0);
+  selectedTemplate = signal<number>(ReviewTemplateType.Residential);
 
   private readonly MAX_FILE_SIZE = 50 * 1024 * 1024; // 50MB in bytes
-  private readonly ALLOWED_EXTENSIONS = ['.xlsx', '.xls'];
 
-  constructor(private snackBar: MatSnackBar) {}
+  templates = [
+    { value: ReviewTemplateType.Residential, label: 'Residential' },
+    { value: ReviewTemplateType.Commercial, label: 'Commercial' }
+  ];
 
   onFileSelected(event: Event): void {
     const input = event.target as HTMLInputElement;
@@ -35,7 +50,6 @@ export class ImportFile {
     if (input.files && input.files.length > 0) {
       const file = input.files[0];
       
-      // Validate file size
       if (file.size > this.MAX_FILE_SIZE) {
         this.snackBar.open(
           `File size exceeds 50MB. Selected file is ${(file.size / (1024 * 1024)).toFixed(2)}MB`,
@@ -43,7 +57,7 @@ export class ImportFile {
           { duration: 5000, panelClass: ['error-snackbar'] }
         );
         this.selectedFile.set(null);
-        input.value = ''; // Reset input
+        input.value = '';
         return;
       }
 
@@ -76,27 +90,24 @@ export class ImportFile {
     this.uploading.set(true);
     this.uploadProgress.set(0);
 
-    // Create FormData to send file
-    const formData = new FormData();
-    formData.append('file', file);
-
-    // TODO: Replace with your actual API endpoint
-    // Example implementation with HttpClient:
-    /*
-    this.http.post('your-api-endpoint/upload', formData, {
-      reportProgress: true,
-      observe: 'events'
-    }).subscribe({
-      next: (event) => {
-        if (event.type === HttpEventType.UploadProgress) {
-          const progress = event.total 
-            ? Math.round((100 * event.loaded) / event.total)
-            : 0;
-          this.uploadProgress.set(progress);
-        } else if (event.type === HttpEventType.Response) {
-          this.snackBar.open('File uploaded successfully!', 'Close', { duration: 3000 });
+    this.importApiService.importExcelFile(file, this.selectedTemplate()).subscribe({
+      next: (result) => {
+        if (typeof result === 'number') {
+          this.uploadProgress.set(result);
+        } else {
+          // Result is FailedImportLoanData[]
+          if (result.length === 0) {
+            this.snackBar.open('File uploaded successfully!', 'Close', { duration: 3000 });
+            this.removeFile();
+          } else {
+            this.snackBar.open(
+              `Upload completed with ${result.length} errors. Check console for details.`,
+              'Close',
+              { duration: 5000, panelClass: ['error-snackbar'] }
+            );
+            console.error('Import errors:', result);
+          }
           this.uploading.set(false);
-          this.removeFile();
         }
       },
       error: (error) => {
@@ -107,25 +118,6 @@ export class ImportFile {
         this.uploading.set(false);
       }
     });
-    */
-
-    // Simulated upload for demonstration
-    this.simulateUpload();
-  }
-
-  private simulateUpload(): void {
-    const interval = setInterval(() => {
-      const currentProgress = this.uploadProgress();
-      
-      if (currentProgress >= 100) {
-        clearInterval(interval);
-        this.uploading.set(false);
-        this.snackBar.open('File uploaded successfully!', 'Close', { duration: 3000 });
-        this.removeFile();
-      } else {
-        this.uploadProgress.set(currentProgress + 10);
-      }
-    }, 300);
   }
 
   formatFileSize(bytes: number): string {

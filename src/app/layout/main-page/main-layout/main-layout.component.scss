@@ -12,14 +12,31 @@
   right: 0;
   z-index: 1000;
   height: 64px;
+  background-color: #03a9f4 !important; // Light Blue
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .app-logo {
+    height: 40px;
+    width: auto;
+  }
 
   .app-title {
     font-size: 20px;
     font-weight: 500;
+    color: white;
   }
 
   .spacer {
     flex: 1 1 auto;
+  }
+
+  button {
+    color: white;
   }
 }
 
@@ -58,11 +75,11 @@
       }
 
       &.active-link {
-        background-color: rgba(63, 81, 181, 0.12);
-        color: #3f51b5;
+        background-color: rgba(3, 169, 244, 0.12); // Light blue
+        color: #03a9f4;
 
         mat-icon {
-          color: #3f51b5;
+          color: #03a9f4;
         }
       }
 
@@ -116,7 +133,7 @@
         transition: color 0.2s;
 
         &:hover {
-          color: #3f51b5;
+          color: #03a9f4;
         }
       }
     }

@@ -1,0 +1,11 @@
+{
+    "adalConfig": {
+        "clientId": "ecf1db8c-1263-4cb0-aeb0-9c93328ff1c8",
+        "tenant": "hometrustcompany.onmicrosoft.com",
+        "cacheLocation": "localStorage"
+    },
+    "apiUrl": "http://localhost:59608",
+    "appInsights": {
+        "instrumentationKey": "b62ba662-aa83-4c66-b62c-3171f37c0f14"
+    }
+}

@@ -4,7 +4,13 @@
     <button mat-icon-button (click)="toggleSidenav()">
       <mat-icon>menu</mat-icon>
     </button>
-    <span class="app-title">Admin Panel</span>
+
+    <!-- Add Logo -->
+    <div class="logo-container">
+      <img src="/src/assets/logo-white.png" alt="Company Logo" class="app-logo">
+      <span class="app-title">Loan Review System</span>
+    </div>
+
     <span class="spacer"></span>
     <button mat-icon-button>
       <mat-icon>notifications</mat-icon>
@@ -17,23 +23,18 @@
   <!-- Sidenav Container -->
   <mat-sidenav-container class="sidenav-container">
     <!-- Sidebar -->
-    <mat-sidenav 
-      [opened]="sidenavOpened()" 
-      mode="side" 
-      class="sidenav">
-      
+    <mat-sidenav [opened]="sidenavOpened()" mode="side" class="sidenav">
+
       <div class="sidenav-header">
         <h2>Navigation</h2>
       </div>
 
       <mat-nav-list>
         @for (item of menuItems; track item.path) {
-          <a mat-list-item 
-             [routerLink]="item.path" 
-             routerLinkActive="active-link">
-            <mat-icon matListItemIcon>{{ item.icon }}</mat-icon>
-            <span matListItemTitle>{{ item.label }}</span>
-          </a>
+        <a mat-list-item [routerLink]="item.path" routerLinkActive="active-link">
+          <mat-icon matListItemIcon>{{ item.icon }}</mat-icon>
+          <span matListItemTitle>{{ item.label }}</span>
+        </a>
         }
       </mat-nav-list>
     </mat-sidenav>

@@ -9,6 +9,15 @@
 
     <mat-card-content>
       <!-- Hidden file input -->
+      <mat-form-field appearance="outline" class="template-select">
+        <mat-label>Select Template Type</mat-label>
+        <mat-select [(ngModel)]="selectedTemplate">
+          @for (template of templates; track template.value) {
+            <mat-option [value]="template.value">{{ template.label }}</mat-option>
+          }
+        </mat-select>
+      </mat-form-field>
+      
       <input
         type="file"
         id="fileInput"

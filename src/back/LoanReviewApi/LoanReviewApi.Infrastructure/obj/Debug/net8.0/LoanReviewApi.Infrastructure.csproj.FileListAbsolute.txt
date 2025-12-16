@@ -16,3 +16,21 @@ C:\Users\hj7082z\source\repos\LoanReview\source\api\LoanReviewApi\LoanReviewApi.
 C:\Users\hj7082z\source\repos\LoanReview\source\api\LoanReviewApi\LoanReviewApi.Infrastructure\obj\Debug\net8.0\LoanReviewApi.Infrastructure.pdb
 C:\Users\hj7082z\source\repos\LoanReview\source\api\LoanReviewApi\LoanReviewApi.Infrastructure\obj\Debug\net8.0\LoanReviewApi.Infrastructure.genruntimeconfig.cache
 C:\Users\hj7082z\source\repos\LoanReview\source\api\LoanReviewApi\LoanReviewApi.Infrastructure\obj\Debug\net8.0\ref\LoanReviewApi.Infrastructure.dll
+C:\Users\fdima\OneDrive\Рабочий стол\Projects\Angular\angular-intensive-examples\src\back\LoanReviewApi\LoanReviewApi.Infrastructure\bin\Debug\net8.0\LoanReviewApi.Infrastructure.deps.json
+C:\Users\fdima\OneDrive\Рабочий стол\Projects\Angular\angular-intensive-examples\src\back\LoanReviewApi\LoanReviewApi.Infrastructure\bin\Debug\net8.0\LoanReviewApi.Infrastructure.runtimeconfig.json
+C:\Users\fdima\OneDrive\Рабочий стол\Projects\Angular\angular-intensive-examples\src\back\LoanReviewApi\LoanReviewApi.Infrastructure\bin\Debug\net8.0\LoanReviewApi.Infrastructure.dll
+C:\Users\fdima\OneDrive\Рабочий стол\Projects\Angular\angular-intensive-examples\src\back\LoanReviewApi\LoanReviewApi.Infrastructure\bin\Debug\net8.0\LoanReviewApi.Infrastructure.pdb
+C:\Users\fdima\OneDrive\Рабочий стол\Projects\Angular\angular-intensive-examples\src\back\LoanReviewApi\LoanReviewApi.Infrastructure\bin\Debug\net8.0\LoanReviewApi.Core.dll
+C:\Users\fdima\OneDrive\Рабочий стол\Projects\Angular\angular-intensive-examples\src\back\LoanReviewApi\LoanReviewApi.Infrastructure\bin\Debug\net8.0\LoanReviewApi.Core.pdb
+C:\Users\fdima\OneDrive\Рабочий стол\Projects\Angular\angular-intensive-examples\src\back\LoanReviewApi\LoanReviewApi.Infrastructure\obj\Debug\net8.0\LoanReviewApi.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\fdima\OneDrive\Рабочий стол\Projects\Angular\angular-intensive-examples\src\back\LoanReviewApi\LoanReviewApi.Infrastructure\obj\Debug\net8.0\LoanReviewApi.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fdima\OneDrive\Рабочий стол\Projects\Angular\angular-intensive-examples\src\back\LoanReviewApi\LoanReviewApi.Infrastructure\obj\Debug\net8.0\LoanReviewApi.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\fdima\OneDrive\Рабочий стол\Projects\Angular\angular-intensive-examples\src\back\LoanReviewApi\LoanReviewApi.Infrastructure\obj\Debug\net8.0\LoanReviewApi.Infrastructure.AssemblyInfo.cs
+C:\Users\fdima\OneDrive\Рабочий стол\Projects\Angular\angular-intensive-examples\src\back\LoanReviewApi\LoanReviewApi.Infrastructure\obj\Debug\net8.0\LoanReviewApi.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\fdima\OneDrive\Рабочий стол\Projects\Angular\angular-intensive-examples\src\back\LoanReviewApi\LoanReviewApi.Infrastructure\obj\Debug\net8.0\LoanReviewApi.Infrastructure.sourcelink.json
+C:\Users\fdima\OneDrive\Рабочий стол\Projects\Angular\angular-intensive-examples\src\back\LoanReviewApi\LoanReviewApi.Infrastructure\obj\Debug\net8.0\LoanRevi.E7AF3D6D.Up2Date
+C:\Users\fdima\OneDrive\Рабочий стол\Projects\Angular\angular-intensive-examples\src\back\LoanReviewApi\LoanReviewApi.Infrastructure\obj\Debug\net8.0\LoanReviewApi.Infrastructure.dll
+C:\Users\fdima\OneDrive\Рабочий стол\Projects\Angular\angular-intensive-examples\src\back\LoanReviewApi\LoanReviewApi.Infrastructure\obj\Debug\net8.0\refint\LoanReviewApi.Infrastructure.dll
+C:\Users\fdima\OneDrive\Рабочий стол\Projects\Angular\angular-intensive-examples\src\back\LoanReviewApi\LoanReviewApi.Infrastructure\obj\Debug\net8.0\LoanReviewApi.Infrastructure.pdb
+C:\Users\fdima\OneDrive\Рабочий стол\Projects\Angular\angular-intensive-examples\src\back\LoanReviewApi\LoanReviewApi.Infrastructure\obj\Debug\net8.0\LoanReviewApi.Infrastructure.genruntimeconfig.cache
+C:\Users\fdima\OneDrive\Рабочий стол\Projects\Angular\angular-intensive-examples\src\back\LoanReviewApi\LoanReviewApi.Infrastructure\obj\Debug\net8.0\ref\LoanReviewApi.Infrastructure.dll

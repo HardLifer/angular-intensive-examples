@@ -2,12 +2,13 @@ import { Injectable, signal } from '@angular/core';
 import { HttpClient, HttpErrorResponse, HttpHeaders } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
 import { catchError, finalize } from 'rxjs/operators';
+import { environment } from '../../../environments/environment.dev';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ApiBaseService {
-  protected readonly baseUrl = 'http://localhost:5081/api'; // Update with your API URL
+  protected baseUrl = environment.apiUrl;
 
   loading = signal(false);
   error = signal<string | null>(null);
@@ -18,7 +19,7 @@ export class ApiBaseService {
     this.loading.set(true);
     this.error.set(null);
 
-    return this.http.get<T>(`${this.baseUrl}/${url}`, options).pipe(
+    return this.http.get<T>(`${this.baseUrl}/api/${url}`, options).pipe(
       catchError(this.handleError.bind(this)),
       finalize(() => this.loading.set(false))
     );
@@ -28,7 +29,7 @@ export class ApiBaseService {
     this.loading.set(true);
     this.error.set(null);
 
-    return this.http.post<T>(`${this.baseUrl}/${url}`, body, options).pipe(
+    return this.http.post<T>(`${this.baseUrl}/api/${url}`, body, options).pipe(
       catchError(this.handleError.bind(this)),
       finalize(() => this.loading.set(false))
     );
@@ -38,7 +39,7 @@ export class ApiBaseService {
     this.loading.set(true);
     this.error.set(null);
 
-    return this.http.put<T>(`${this.baseUrl}/${url}`, body, options).pipe(
+    return this.http.put<T>(`${this.baseUrl}/api/${url}`, body, options).pipe(
       catchError(this.handleError.bind(this)),
       finalize(() => this.loading.set(false))
     );
@@ -48,7 +49,7 @@ export class ApiBaseService {
     this.loading.set(true);
     this.error.set(null);
 
-    return this.http.delete<T>(`${this.baseUrl}/${url}`, options).pipe(
+    return this.http.delete<T>(`${this.baseUrl}/api/${url}`, options).pipe(
       catchError(this.handleError.bind(this)),
       finalize(() => this.loading.set(false))
     );

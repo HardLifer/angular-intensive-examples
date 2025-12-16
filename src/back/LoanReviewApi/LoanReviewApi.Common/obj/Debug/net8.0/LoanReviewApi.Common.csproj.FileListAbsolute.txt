@@ -10,3 +10,15 @@ C:\Users\hj7082z\source\repos\LoanReview\source\api\LoanReviewApi\LoanReviewApi.
 C:\Users\hj7082z\source\repos\LoanReview\source\api\LoanReviewApi\LoanReviewApi.Common\obj\Debug\net8.0\refint\LoanReviewApi.Common.dll
 C:\Users\hj7082z\source\repos\LoanReview\source\api\LoanReviewApi\LoanReviewApi.Common\obj\Debug\net8.0\LoanReviewApi.Common.pdb
 C:\Users\hj7082z\source\repos\LoanReview\source\api\LoanReviewApi\LoanReviewApi.Common\obj\Debug\net8.0\ref\LoanReviewApi.Common.dll
+C:\Users\fdima\OneDrive\Рабочий стол\Projects\Angular\angular-intensive-examples\src\back\LoanReviewApi\LoanReviewApi.Common\bin\Debug\net8.0\LoanReviewApi.Common.deps.json
+C:\Users\fdima\OneDrive\Рабочий стол\Projects\Angular\angular-intensive-examples\src\back\LoanReviewApi\LoanReviewApi.Common\bin\Debug\net8.0\LoanReviewApi.Common.dll
+C:\Users\fdima\OneDrive\Рабочий стол\Projects\Angular\angular-intensive-examples\src\back\LoanReviewApi\LoanReviewApi.Common\bin\Debug\net8.0\LoanReviewApi.Common.pdb
+C:\Users\fdima\OneDrive\Рабочий стол\Projects\Angular\angular-intensive-examples\src\back\LoanReviewApi\LoanReviewApi.Common\obj\Debug\net8.0\LoanReviewApi.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fdima\OneDrive\Рабочий стол\Projects\Angular\angular-intensive-examples\src\back\LoanReviewApi\LoanReviewApi.Common\obj\Debug\net8.0\LoanReviewApi.Common.AssemblyInfoInputs.cache
+C:\Users\fdima\OneDrive\Рабочий стол\Projects\Angular\angular-intensive-examples\src\back\LoanReviewApi\LoanReviewApi.Common\obj\Debug\net8.0\LoanReviewApi.Common.AssemblyInfo.cs
+C:\Users\fdima\OneDrive\Рабочий стол\Projects\Angular\angular-intensive-examples\src\back\LoanReviewApi\LoanReviewApi.Common\obj\Debug\net8.0\LoanReviewApi.Common.csproj.CoreCompileInputs.cache
+C:\Users\fdima\OneDrive\Рабочий стол\Projects\Angular\angular-intensive-examples\src\back\LoanReviewApi\LoanReviewApi.Common\obj\Debug\net8.0\LoanReviewApi.Common.sourcelink.json
+C:\Users\fdima\OneDrive\Рабочий стол\Projects\Angular\angular-intensive-examples\src\back\LoanReviewApi\LoanReviewApi.Common\obj\Debug\net8.0\LoanReviewApi.Common.dll
+C:\Users\fdima\OneDrive\Рабочий стол\Projects\Angular\angular-intensive-examples\src\back\LoanReviewApi\LoanReviewApi.Common\obj\Debug\net8.0\refint\LoanReviewApi.Common.dll
+C:\Users\fdima\OneDrive\Рабочий стол\Projects\Angular\angular-intensive-examples\src\back\LoanReviewApi\LoanReviewApi.Common\obj\Debug\net8.0\LoanReviewApi.Common.pdb
+C:\Users\fdima\OneDrive\Рабочий стол\Projects\Angular\angular-intensive-examples\src\back\LoanReviewApi\LoanReviewApi.Common\obj\Debug\net8.0\ref\LoanReviewApi.Common.dll

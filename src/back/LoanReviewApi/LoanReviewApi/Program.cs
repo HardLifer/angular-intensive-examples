@@ -22,7 +22,17 @@ namespace LoanReviewApi
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
-            builder.Services.AddLoanDbContext(builder.Configuration, builder.Environment);
+            builder.Services.AddCors(options =>             {
+                options.AddDefaultPolicy(
+                    policy =>
+                    {
+                        policy.AllowAnyOrigin()
+                              .AllowAnyHeader()
+                              .AllowAnyMethod();
+                    });
+            });
+
+      builder.Services.AddLoanDbContext(builder.Configuration, builder.Environment);
 
             builder.Services.AddExcelImportService();
             builder.Services.AddExcelValidators();
@@ -62,6 +72,8 @@ namespace LoanReviewApi
             }
 
             app.UseHttpsRedirection();
+
+            app.UseCors();
 
             app.MapControllers();
 

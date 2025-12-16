@@ -1,5 +1,6 @@
 import { Component, signal, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
@@ -7,9 +8,9 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatSelectModule } from '@angular/material/select';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import { FormsModule } from '@angular/forms';
-import { ImportApiService } from '../../../core/services/import-api.service';
-import { ReviewTemplateType } from '../../../core/models/review-template.model';
+import { MatDialog, MatDialogModule } from '@angular/material/dialog';
+import { ImportApiService, ReviewTemplate, FailedImportLoanData } from '../../../core/index';
+import { ImportErrorsDialogComponent } from '../../../shared//dialogs/import-errors-dialog/import-errors-dialog';
 
 @Component({
   selector: 'app-import-file',
@@ -23,36 +24,38 @@ import { ReviewTemplateType } from '../../../core/models/review-template.model';
     MatProgressBarModule,
     MatSnackBarModule,
     MatSelectModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatDialogModule
   ],
   templateUrl: './import-file.html',
   styleUrl: './import-file.scss',
 })
 export class ImportFile {
-  private importApiService = inject(ImportApiService);
+  private importService = inject(ImportApiService);
   private snackBar = inject(MatSnackBar);
+  private dialog = inject(MatDialog);
 
   selectedFile = signal<File | null>(null);
   uploading = signal(false);
   uploadProgress = signal(0);
-  selectedTemplate = signal<number>(ReviewTemplateType.Residential);
+  selectedTemplate = signal<number>(ReviewTemplate.Residential);
 
-  private readonly MAX_FILE_SIZE = 50 * 1024 * 1024; // 50MB in bytes
+  private readonly MAX_FILE_SIZE = 50 * 1024 * 1024; // 50MB
 
   templates = [
-    { value: ReviewTemplateType.Residential, label: 'Residential' },
-    { value: ReviewTemplateType.Commercial, label: 'Commercial' }
+    { value: ReviewTemplate.Residential, label: 'Residential' },
+    { value: ReviewTemplate.Commercial, label: 'Commercial' }
   ];
 
   onFileSelected(event: Event): void {
     const input = event.target as HTMLInputElement;
-    
+
     if (input.files && input.files.length > 0) {
       const file = input.files[0];
-      
+
       if (file.size > this.MAX_FILE_SIZE) {
         this.snackBar.open(
-          `File size exceeds 50MB. Selected file is ${(file.size / (1024 * 1024)).toFixed(2)}MB`,
+          `File size exceeds 50MB. Selected: ${(file.size / (1024 * 1024)).toFixed(2)}MB`,
           'Close',
           { duration: 5000, panelClass: ['error-snackbar'] }
         );
@@ -81,7 +84,7 @@ export class ImportFile {
 
   uploadFile(): void {
     const file = this.selectedFile();
-    
+
     if (!file) {
       this.snackBar.open('Please select a file first', 'Close', { duration: 3000 });
       return;
@@ -90,34 +93,90 @@ export class ImportFile {
     this.uploading.set(true);
     this.uploadProgress.set(0);
 
-    this.importApiService.importExcelFile(file, this.selectedTemplate()).subscribe({
+    this.importService.importExcelFile(file, this.selectedTemplate()).subscribe({
       next: (result) => {
-        if (typeof result === 'number') {
-          this.uploadProgress.set(result);
-        } else {
-          // Result is FailedImportLoanData[]
-          if (result.length === 0) {
-            this.snackBar.open('File uploaded successfully!', 'Close', { duration: 3000 });
+        if (result.type === 'progress') {
+          this.uploadProgress.set(result.progress || 0);
+        } else if (result.type === 'complete') {
+          const errors = result.data || [];
+
+          if (errors.length === 0) {
+            this.snackBar.open('✓ File uploaded successfully!', 'Close', {
+              duration: 3000,
+              panelClass: ['success-snackbar']
+            });
             this.removeFile();
           } else {
-            this.snackBar.open(
-              `Upload completed with ${result.length} errors. Check console for details.`,
-              'Close',
-              { duration: 5000, panelClass: ['error-snackbar'] }
-            );
-            console.error('Import errors:', result);
+            // Open dialog with errors
+            this.openErrorsDialog(errors, file.name);
           }
           this.uploading.set(false);
         }
       },
       error: (error) => {
-        this.snackBar.open('Upload failed: ' + error.message, 'Close', { 
+        this.snackBar.open('✗ Upload failed: ' + error.message, 'Close', {
           duration: 5000,
           panelClass: ['error-snackbar']
         });
         this.uploading.set(false);
       }
     });
+  }
+
+  private openErrorsDialog(errors: FailedImportLoanData[], fileName: string): void {
+    const dialogRef = this.dialog.open(ImportErrorsDialogComponent, {
+      width: '900px',
+      maxWidth: '95vw',
+      maxHeight: '90vh',
+      data: {
+        errors: errors,
+        fileName: fileName,
+        totalErrors: errors.length
+      },
+      disableClose: false,
+      panelClass: 'import-errors-dialog'
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      if (result === 'download') {
+        this.downloadErrorReport(errors);
+      } else if (result === 'retry') {
+        // User wants to fix and retry - keep the file selected
+        this.snackBar.open('Please fix the errors in your file and upload again', 'Close', {
+          duration: 4000
+        });
+      }
+    });
+  }
+
+  private downloadErrorReport(errors: FailedImportLoanData[]): void {
+    // Create CSV content
+    let csvContent = 'Row Number,Column Name,Invalid Data,Error Message\n';
+
+    errors.forEach(error => {
+      const row = [
+        error.rowNumber,
+        error.columnName || 'N/A',
+        `"${(error.rowData || 'N/A').replace(/"/g, '""')}"`,
+        `"${error.validationMessage.replace(/"/g, '""')}"`
+      ].join(',');
+      csvContent += row + '\n';
+    });
+
+    // Create blob and download
+    const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+    const link = document.createElement('a');
+    const url = URL.createObjectURL(blob);
+
+    link.setAttribute('href', url);
+    link.setAttribute('download', `import-errors-${new Date().getTime()}.csv`);
+    link.style.visibility = 'hidden';
+
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+
+    this.snackBar.open('✓ Error report downloaded', 'Close', { duration: 3000 });
   }
 
   formatFileSize(bytes: number): string {

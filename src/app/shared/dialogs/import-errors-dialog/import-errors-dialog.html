@@ -1,0 +1,120 @@
+<div class="dialog-container">
+  <!-- Header -->
+  <div class="dialog-header">
+    <div class="header-content">
+      <mat-icon class="error-icon">error_outline</mat-icon>
+      <div class="header-text">
+        <h2 mat-dialog-title>Import Validation Errors</h2>
+        <p class="subtitle">{{ data.fileName }}</p>
+      </div>
+    </div>
+    <button mat-icon-button (click)="close()" class="close-button">
+      <mat-icon>close</mat-icon>
+    </button>
+  </div>
+
+  <!-- Summary Chips -->
+  <div class="summary-chips">
+    <mat-chip-set>
+      <mat-chip class="error-chip">
+        <mat-icon>warning</mat-icon>
+        Total Errors: {{ data.totalErrors }}
+      </mat-chip>
+      <mat-chip class="info-chip">
+        <mat-icon>visibility</mat-icon>
+        Showing: Last {{ displayErrors.length }}
+      </mat-chip>
+      @if (remainingCount > 0) {
+        <mat-chip class="warning-chip">
+          <mat-icon>more_horiz</mat-icon>
+          {{ remainingCount }} more error(s) not displayed
+        </mat-chip>
+      }
+    </mat-chip-set>
+  </div>
+
+  <!-- Content -->
+  <mat-dialog-content>
+    <div class="info-message">
+      <mat-icon>info</mat-icon>
+      <p>
+        The following rows contain validation errors and were not imported. 
+        Please fix the errors and re-upload the file.
+      </p>
+    </div>
+
+    <!-- Error Table -->
+    <div class="table-container">
+      <table mat-table [dataSource]="displayErrors" class="errors-table">
+        
+        <!-- Row Number Column -->
+        <ng-container matColumnDef="rowNumber">
+          <th mat-header-cell *matHeaderCellDef>Row #</th>
+          <td mat-cell *matCellDef="let error">
+            <span class="row-badge">{{ error.rowNumber }}</span>
+          </td>
+        </ng-container>
+
+        <!-- Column Name Column -->
+        <ng-container matColumnDef="columnName">
+          <th mat-header-cell *matHeaderCellDef>Column</th>
+          <td mat-cell *matCellDef="let error">
+            <span class="column-name">{{ error.columnName || 'General' }}</span>
+          </td>
+        </ng-container>
+
+        <!-- Row Data Column -->
+        <ng-container matColumnDef="rowData">
+          <th mat-header-cell *matHeaderCellDef>Invalid Data</th>
+          <td mat-cell *matCellDef="let error">
+            <code class="data-value">{{ error.rowData || 'N/A' }}</code>
+          </td>
+        </ng-container>
+
+        <!-- Validation Message Column -->
+        <ng-container matColumnDef="validationMessage">
+          <th mat-header-cell *matHeaderCellDef>Error Description</th>
+          <td mat-cell *matCellDef="let error">
+            <div class="error-message">
+              <mat-icon class="error-icon-small">error</mat-icon>
+              <span>{{ error.validationMessage }}</span>
+            </div>
+          </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;" class="error-row"></tr>
+      </table>
+    </div>
+
+    <!-- Alternative: Structured Text Format -->
+    <div class="text-format">
+      <button mat-stroked-button (click)="showTextFormat = !showTextFormat">
+        <mat-icon>{{ showTextFormat ? 'table_chart' : 'text_fields' }}</mat-icon>
+        {{ showTextFormat ? 'Show Table View' : 'Show Text Format' }}
+      </button>
+
+      @if (showTextFormat) {
+        <div class="text-content">
+          <pre>{{ formatAsText() }}</pre>
+        </div>
+      }
+    </div>
+  </mat-dialog-content>
+
+  <!-- Actions -->
+  <mat-dialog-actions align="end">
+    <button mat-button (click)="close()">
+      <mat-icon>cancel</mat-icon>
+      Close
+    </button>
+    <button mat-stroked-button color="primary" (click)="downloadFullReport()">
+      <mat-icon>download</mat-icon>
+      Download Full Report
+    </button>
+    <button mat-raised-button color="primary" (click)="retryImport()">
+      <mat-icon>refresh</mat-icon>
+      Fix & Retry
+    </button>
+  </mat-dialog-actions>
+</div>

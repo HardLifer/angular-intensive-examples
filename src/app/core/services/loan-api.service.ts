@@ -8,13 +8,28 @@ import { LoanDetailDto, GetLoanByIdRequest } from '..';
 })
 export class LoanApiService extends ApiBaseService {
 
-    getLoanById(loanDetailId: number): Observable<LoanDetailDto> {
-        return this.get<LoanDetailDto>(`LoanDetails?loanDetailId=${loanDetailId}`);
-    }
+  /**
+   * Get loan detail by ID
+   * Maps to: GET /api/LoanDetails?loanDetailId={id}
+   */
+  getLoanById(loanDetailId: number): Observable<LoanDetailDto> {
+    return this.get<LoanDetailDto>(`LoanDetails?loanDetailId=${loanDetailId}`);
+  }
 
-    // Future: Add pagination, search, filters
-    searchLoans(searchText: string, pageIndex: number, pageSize: number): Observable<any> {
-        // This endpoint doesn't exist in your backend yet, but structure for future
-        return this.get(`LoanDetails/search?text=${searchText}&page=${pageIndex}&size=${pageSize}`);
-    }
+  /**
+   * Search loans (when backend endpoint is implemented)
+   * Future endpoint: GET /api/LoanDetails/search
+   */
+  searchLoans(searchText: string, pageIndex: number, pageSize: number): Observable<any> {
+    const params = `search?text=${encodeURIComponent(searchText)}&page=${pageIndex}&size=${pageSize}`;
+    return this.get(`LoanDetails/${params}`);
+  }
+
+  /**
+   * Get all loans with pagination (when backend endpoint is implemented)
+   * Future endpoint: GET /api/LoanDetails/list
+   */
+  getAllLoans(pageIndex: number, pageSize: number): Observable<any> {
+    return this.get(`LoanDetails/list?page=${pageIndex}&size=${pageSize}`);
+  }
 }

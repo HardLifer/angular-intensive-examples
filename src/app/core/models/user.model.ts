@@ -5,8 +5,19 @@ export interface UserDto {
   lastName: string | null;
   isActive: boolean;
   roleId: number;
-  roleName: string | null;
   email: string | null;
   phone: string | null;
   title: string | null;
+  createdAt: Date | null;
+  updatedAt: Date | null;
+  deletedAt: Date | null;
+}
+
+export interface UserRoleDto {
+  id: number;
+  roleName: string;
+}
+
+export interface UserWithRoleDto extends UserDto {
+  role: UserRoleDto;
 }

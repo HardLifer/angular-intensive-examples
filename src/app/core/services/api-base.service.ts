@@ -1,34 +1,54 @@
 import { Injectable, signal } from '@angular/core';
-import { HttpClient, HttpErrorResponse } from '@angular/common/http';
+import { HttpClient, HttpErrorResponse, HttpHeaders } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
-import { catchError, tap, finalize } from 'rxjs/operators';
+import { catchError, finalize } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ApiBaseService {
-  protected readonly baseUrl = 'http://localhost:5081/api';
-  
+  protected readonly baseUrl = 'http://localhost:5081/api'; // Update with your API URL
+
   loading = signal(false);
   error = signal<string | null>(null);
 
-  constructor(protected http: HttpClient) {}
+  constructor(protected http: HttpClient) { }
 
-  protected get<T>(url: string): Observable<T> {
+  protected get<T>(url: string, options?: { headers?: HttpHeaders }): Observable<T> {
     this.loading.set(true);
     this.error.set(null);
-    
-    return this.http.get<T>(`${this.baseUrl}/${url}`).pipe(
+
+    return this.http.get<T>(`${this.baseUrl}/${url}`, options).pipe(
       catchError(this.handleError.bind(this)),
       finalize(() => this.loading.set(false))
     );
   }
 
-  protected post<T>(url: string, body: any): Observable<T> {
+  protected post<T>(url: string, body: any, options?: { headers?: HttpHeaders }): Observable<T> {
     this.loading.set(true);
     this.error.set(null);
-    
-    return this.http.post<T>(`${this.baseUrl}/${url}`, body).pipe(
+
+    return this.http.post<T>(`${this.baseUrl}/${url}`, body, options).pipe(
+      catchError(this.handleError.bind(this)),
+      finalize(() => this.loading.set(false))
+    );
+  }
+
+  protected put<T>(url: string, body: any, options?: { headers?: HttpHeaders }): Observable<T> {
+    this.loading.set(true);
+    this.error.set(null);
+
+    return this.http.put<T>(`${this.baseUrl}/${url}`, body, options).pipe(
+      catchError(this.handleError.bind(this)),
+      finalize(() => this.loading.set(false))
+    );
+  }
+
+  protected delete<T>(url: string, options?: { headers?: HttpHeaders }): Observable<T> {
+    this.loading.set(true);
+    this.error.set(null);
+
+    return this.http.delete<T>(`${this.baseUrl}/${url}`, options).pipe(
       catchError(this.handleError.bind(this)),
       finalize(() => this.loading.set(false))
     );
@@ -36,16 +56,28 @@ export class ApiBaseService {
 
   protected handleError(error: HttpErrorResponse): Observable<never> {
     let errorMessage = 'An error occurred';
-    
+
     if (error.error instanceof ErrorEvent) {
+      // Client-side error
       errorMessage = `Client Error: ${error.error.message}`;
     } else {
-      errorMessage = `Server Error: ${error.status} - ${error.message}`;
+      // Server-side error
+      if (error.status === 0) {
+        errorMessage = 'Unable to connect to server. Please check if the API is running.';
+      } else if (error.status === 400) {
+        errorMessage = error.error?.message || 'Bad Request';
+      } else if (error.status === 404) {
+        errorMessage = 'Resource not found';
+      } else if (error.status === 500) {
+        errorMessage = 'Internal server error';
+      } else {
+        errorMessage = `Server Error: ${error.status} - ${error.message}`;
+      }
     }
-    
+
     this.error.set(errorMessage);
-    console.error(errorMessage);
-    
+    console.error('API Error:', errorMessage, error);
+
     return throwError(() => new Error(errorMessage));
   }
 }

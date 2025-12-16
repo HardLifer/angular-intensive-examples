@@ -11,3 +11,4 @@ export * from './models/requests/loan-search-request.model';
 export * from './services/api-base.service';
 export * from './services/loan-api.service';
 export * from './services/import-api.service';
+export * from './services/loan-review.service';

@@ -27,10 +27,8 @@ export class MainLayoutComponent {
   
   menuItems = [
     { path: '/dashboard', label: 'Dashboard', icon: 'dashboard' },
-    { path: '/data-management', label: 'Data Management', icon: 'table_chart' },
     { path: '/search', label: 'Search', icon: 'search' },
-    { path: '/import', label: 'Import Data', icon: 'upload_file' },
-    { path: '/profile', label: 'Profile', icon: 'person' }
+    { path: '/import', label: 'Import Data', icon: 'upload_file' }
   ];
 
   toggleSidenav() {

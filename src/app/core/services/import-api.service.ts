@@ -26,7 +26,7 @@ export class ImportApiService extends ApiBaseService {
         formData.append('file', file);
 
         return this.http.post<FailedImportLoanData[]>(
-            `${this.baseUrl}/api/Import/${templateId}`,
+            `${this.baseUrl}/Import/${templateId}`,
             formData,
             {
                 reportProgress: true,

@@ -3,7 +3,7 @@
   <mat-card class="search-card">
     <mat-card-content>
       <mat-form-field class="search-field" appearance="outline">
-        <mat-label>Search by Loan ID, Insurance Type, or Borrower</mat-label>
+        <mat-label>Search by Loan ID</mat-label>
         <input matInput placeholder="Enter loan ID, insurance type, or borrower name..." [ngModel]="searchText()"
           (ngModelChange)="onSearchChange($event)">
         <mat-icon matPrefix>search</mat-icon>

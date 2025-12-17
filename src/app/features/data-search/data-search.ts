@@ -56,19 +56,17 @@ export class DataSearchComponent implements OnInit {
 
     // Filter data based on search
     const filtered = data.filter(item =>
-      item.loanId.toString().includes(search) ||
-      (item.insuranceType?.toLowerCase() || '').includes(search) ||
-      (item.borrowerName?.toLowerCase() || '').includes(search)
+      item.loanId.toString().includes(search)
     );
 
     // Update total items for pagination
-    this.totalItems.set(filtered.length);
+    //this.totalItems.set(data.length);
 
     // Apply pagination
-    const startIndex = this.pageIndex() * this.pageSize();
-    const endIndex = startIndex + this.pageSize();
+    // const startIndex = this.pageIndex() * this.pageSize();
+    // const endIndex = startIndex + this.pageSize();
 
-    return filtered.slice(startIndex, endIndex);
+    return filtered;
   });
 
   ngOnInit(): void {

@@ -19,7 +19,7 @@ export class ApiBaseService {
     this.loading.set(true);
     this.error.set(null);
 
-    return this.http.get<T>(`${this.baseUrl}/api/${url}`, options).pipe(
+    return this.http.get<T>(`${this.baseUrl}/${url}`, options).pipe(
       catchError(this.handleError.bind(this)),
       finalize(() => this.loading.set(false))
     );
@@ -29,7 +29,7 @@ export class ApiBaseService {
     this.loading.set(true);
     this.error.set(null);
 
-    return this.http.post<T>(`${this.baseUrl}/api/${url}`, body, options).pipe(
+    return this.http.post<T>(`${this.baseUrl}/${url}`, body, options).pipe(
       catchError(this.handleError.bind(this)),
       finalize(() => this.loading.set(false))
     );
@@ -39,7 +39,7 @@ export class ApiBaseService {
     this.loading.set(true);
     this.error.set(null);
 
-    return this.http.put<T>(`${this.baseUrl}/api/${url}`, body, options).pipe(
+    return this.http.put<T>(`${this.baseUrl}/${url}`, body, options).pipe(
       catchError(this.handleError.bind(this)),
       finalize(() => this.loading.set(false))
     );
@@ -49,7 +49,7 @@ export class ApiBaseService {
     this.loading.set(true);
     this.error.set(null);
 
-    return this.http.delete<T>(`${this.baseUrl}/api/${url}`, options).pipe(
+    return this.http.delete<T>(`${this.baseUrl}/${url}`, options).pipe(
       catchError(this.handleError.bind(this)),
       finalize(() => this.loading.set(false))
     );

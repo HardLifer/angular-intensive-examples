@@ -1,3 +1,4 @@
+using LoanReviewApi.DependencyInjection;
 using LoanReviewApi.Infrastructure.Context;
 using LoanReviewApi.Infrastructure.DependencyInjection;
 using LoanReviewApi.Services.DependencyInjection;
@@ -32,7 +33,9 @@ namespace LoanReviewApi
                     });
             });
 
-      builder.Services.AddLoanDbContext(builder.Configuration, builder.Environment);
+			builder.Services.AddEndpointRequestValidators();
+
+			builder.Services.AddLoanDbContext(builder.Configuration, builder.Environment);
 
             builder.Services.AddExcelImportService();
             builder.Services.AddExcelValidators();
@@ -46,7 +49,7 @@ namespace LoanReviewApi
                 options.DefaultEntryOptions = new HybridCacheEntryOptions
                 {
                     Expiration = TimeSpan.FromMinutes(5),
-                    LocalCacheExpiration = TimeSpan.FromMinutes(5)
+                    LocalCacheExpiration = TimeSpan.FromMinutes(1)
                 };
             });
 

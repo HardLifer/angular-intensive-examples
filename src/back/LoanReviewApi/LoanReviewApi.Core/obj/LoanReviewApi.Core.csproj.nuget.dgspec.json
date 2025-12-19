@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\fdima\\OneDrive\\Рабочий стол\\Projects\\Angular\\angular-intensive-examples\\src\\back\\LoanReviewApi\\LoanReviewApi.Core\\LoanReviewApi.Core.csproj": {}
+    "D:\\Portfolio\\AngularIntensive\\angular-intensive-examples\\src\\back\\LoanReviewApi\\LoanReviewApi.Core\\LoanReviewApi.Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\fdima\\OneDrive\\Рабочий стол\\Projects\\Angular\\angular-intensive-examples\\src\\back\\LoanReviewApi\\LoanReviewApi.Core\\LoanReviewApi.Core.csproj": {
+    "D:\\Portfolio\\AngularIntensive\\angular-intensive-examples\\src\\back\\LoanReviewApi\\LoanReviewApi.Core\\LoanReviewApi.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\fdima\\OneDrive\\Рабочий стол\\Projects\\Angular\\angular-intensive-examples\\src\\back\\LoanReviewApi\\LoanReviewApi.Core\\LoanReviewApi.Core.csproj",
+        "projectUniqueName": "D:\\Portfolio\\AngularIntensive\\angular-intensive-examples\\src\\back\\LoanReviewApi\\LoanReviewApi.Core\\LoanReviewApi.Core.csproj",
         "projectName": "LoanReviewApi.Core",
-        "projectPath": "C:\\Users\\fdima\\OneDrive\\Рабочий стол\\Projects\\Angular\\angular-intensive-examples\\src\\back\\LoanReviewApi\\LoanReviewApi.Core\\LoanReviewApi.Core.csproj",
-        "packagesPath": "C:\\Users\\fdima\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\fdima\\OneDrive\\Рабочий стол\\Projects\\Angular\\angular-intensive-examples\\src\\back\\LoanReviewApi\\LoanReviewApi.Core\\obj\\",
+        "projectPath": "D:\\Portfolio\\AngularIntensive\\angular-intensive-examples\\src\\back\\LoanReviewApi\\LoanReviewApi.Core\\LoanReviewApi.Core.csproj",
+        "packagesPath": "C:\\Users\\Rocket-Learn\\.nuget\\packages\\",
+        "outputPath": "D:\\Portfolio\\AngularIntensive\\angular-intensive-examples\\src\\back\\LoanReviewApi\\LoanReviewApi.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "E:\\SSMS Components\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\fdima\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Rocket-Learn\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -66,7 +66,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,6 +1,4 @@
 using LoanReviewApi.Core.Enums;
-using LoanReviewApi.Core.Models.Reviews;
-using LoanReviewApi.DTO;
 using LoanReviewApi.Services.Interfaces;
 using LoanReviewApi.Services.Models;
 using Microsoft.AspNetCore.Mvc;
@@ -31,7 +29,7 @@ namespace LoanReviewApi.Controllers
             {
                 _logger.LogDebug("ImportExcelFile called with templateId: {TemplateId}", templateId);
 
-                if (Enum.IsDefined<ReviewTemplates>((ReviewTemplates)templateId))
+                if (!Enum.TryParse<ReviewTemplates>(templateId.ToString(), true, out _))
                 {
                     _logger.LogWarning("Provided template id: {TemplateId} doesn't exist in the system.", templateId);
 
@@ -41,10 +39,12 @@ namespace LoanReviewApi.Controllers
                 if (file == null || file.Length == 0)
                 {
                     _logger.LogWarning("No file was provided for import.");
+
                     return BadRequest(new { Message = "No file provided." });
                 }
-                //Pre-validations
-                //Pre-logging
+                
+                _logger.LogDebug("Starting import process for file: {FileName} with templateId: {TemplateId}", file.FileName, templateId);
+
                 var importFailedLoans = await _importLoansService.ImportLoans(file, templateId, cancellationToken);
 
                 if (importFailedLoans.Any())
@@ -56,6 +56,7 @@ namespace LoanReviewApi.Controllers
             }
             catch (Exception ex)
             {
+                _logger.LogError(ex, "An error occurred while importing the Excel file.");
 
                 throw;
             }

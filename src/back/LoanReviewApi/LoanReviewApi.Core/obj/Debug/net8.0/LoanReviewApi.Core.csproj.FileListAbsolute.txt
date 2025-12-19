@@ -22,3 +22,15 @@ C:\Users\fdima\OneDrive\Рабочий стол\Projects\Angular\angular-intensi
 C:\Users\fdima\OneDrive\Рабочий стол\Projects\Angular\angular-intensive-examples\src\back\LoanReviewApi\LoanReviewApi.Core\obj\Debug\net8.0\refint\LoanReviewApi.Core.dll
 C:\Users\fdima\OneDrive\Рабочий стол\Projects\Angular\angular-intensive-examples\src\back\LoanReviewApi\LoanReviewApi.Core\obj\Debug\net8.0\LoanReviewApi.Core.pdb
 C:\Users\fdima\OneDrive\Рабочий стол\Projects\Angular\angular-intensive-examples\src\back\LoanReviewApi\LoanReviewApi.Core\obj\Debug\net8.0\ref\LoanReviewApi.Core.dll
+D:\Portfolio\AngularIntensive\angular-intensive-examples\src\back\LoanReviewApi\LoanReviewApi.Core\bin\Debug\net8.0\LoanReviewApi.Core.deps.json
+D:\Portfolio\AngularIntensive\angular-intensive-examples\src\back\LoanReviewApi\LoanReviewApi.Core\bin\Debug\net8.0\LoanReviewApi.Core.dll
+D:\Portfolio\AngularIntensive\angular-intensive-examples\src\back\LoanReviewApi\LoanReviewApi.Core\bin\Debug\net8.0\LoanReviewApi.Core.pdb
+D:\Portfolio\AngularIntensive\angular-intensive-examples\src\back\LoanReviewApi\LoanReviewApi.Core\obj\Debug\net8.0\LoanReviewApi.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Portfolio\AngularIntensive\angular-intensive-examples\src\back\LoanReviewApi\LoanReviewApi.Core\obj\Debug\net8.0\LoanReviewApi.Core.AssemblyInfoInputs.cache
+D:\Portfolio\AngularIntensive\angular-intensive-examples\src\back\LoanReviewApi\LoanReviewApi.Core\obj\Debug\net8.0\LoanReviewApi.Core.AssemblyInfo.cs
+D:\Portfolio\AngularIntensive\angular-intensive-examples\src\back\LoanReviewApi\LoanReviewApi.Core\obj\Debug\net8.0\LoanReviewApi.Core.csproj.CoreCompileInputs.cache
+D:\Portfolio\AngularIntensive\angular-intensive-examples\src\back\LoanReviewApi\LoanReviewApi.Core\obj\Debug\net8.0\LoanReviewApi.Core.sourcelink.json
+D:\Portfolio\AngularIntensive\angular-intensive-examples\src\back\LoanReviewApi\LoanReviewApi.Core\obj\Debug\net8.0\LoanReviewApi.Core.dll
+D:\Portfolio\AngularIntensive\angular-intensive-examples\src\back\LoanReviewApi\LoanReviewApi.Core\obj\Debug\net8.0\refint\LoanReviewApi.Core.dll
+D:\Portfolio\AngularIntensive\angular-intensive-examples\src\back\LoanReviewApi\LoanReviewApi.Core\obj\Debug\net8.0\LoanReviewApi.Core.pdb
+D:\Portfolio\AngularIntensive\angular-intensive-examples\src\back\LoanReviewApi\LoanReviewApi.Core\obj\Debug\net8.0\ref\LoanReviewApi.Core.dll

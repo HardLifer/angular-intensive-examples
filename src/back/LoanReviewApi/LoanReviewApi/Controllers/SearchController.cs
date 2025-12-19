@@ -1,82 +1,119 @@
-﻿using LoanReviewApi.DTO;
+using FluentValidation;
+using LoanReviewApi.DTO;
 using LoanReviewApi.Services.DTOs;
 using LoanReviewApi.Services.Interfaces;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Net;
 
 namespace LoanReviewApi.Controllers
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class SearchController : ControllerBase
-    {
-        private readonly ILogger<SearchController> _searchLogger;
-        private readonly ISearchLoanService _searchLoanService;
+	[Route("api/[controller]")]
+	[ApiController]
+	public class SearchController : ControllerBase
+	{
+		private readonly ILogger<SearchController> _searchLogger;
+		private readonly ISearchLoanService _searchLoanService;
+		private readonly IValidator<SearchRequestDto> _searchRequestValidator;
 
-        public SearchController(ILogger<SearchController> searchLogger, ISearchLoanService searchLoanService)
-        {
-            _searchLogger = searchLogger;
-            _searchLoanService = searchLoanService;
-        }
+		public SearchController(ILogger<SearchController> searchLogger, ISearchLoanService searchLoanService, IValidator<SearchRequestDto> searchRequestValidator)
+		{
+			_searchLogger = searchLogger;
+			_searchLoanService = searchLoanService;
+			_searchRequestValidator = searchRequestValidator;
+		}
 
-        [HttpGet]
-        public async Task<ActionResult<LoanReviewDetailDto>> SearchLoanById([FromQuery] int loanDetailId, CancellationToken cancellationToken = default)
-        {
-            try
-            {
-                var loan = await _searchLoanService.GetLoanDetailById(loanDetailId, cancellationToken);
+		[HttpGet("search-loan-by-id/{templateId:int}/{loanId:int}")]
+		[ProducesResponseType(typeof(LoanReviewDetailDto), (int)HttpStatusCode.OK)]
+		[ProducesResponseType(typeof(ProblemDetails), (int)HttpStatusCode.NotFound)]
+		public async Task<ActionResult<LoanReviewDetailDto>> SearchLoanById(int templateId, int loanId, CancellationToken cancellationToken = default)
+		{
+			try
+			{
+				_searchLogger.LogDebug("SearchLoanById called with TemplateId: {TemplateId} and LoanId: {LoanId}", templateId, loanId);
 
-                if (loan == null)
-                {
-                    return NotFound("Loan not found");
-                }
+				var loan = await _searchLoanService.GetLoanDetailById(loanId, templateId, cancellationToken);
 
-                return Ok(loan);
-            }
-            catch (Exception ex)
-            {
+				if (loan == null)
+				{
+					_searchLogger.LogInformation("Loan not found for TemplateId: {TemplateId} and LoanId: {LoanId}", templateId, loanId);
 
-                throw;
-            }
-        }
+					return NotFound(new ProblemDetails
+					{
+						Detail = $"Loan not found for TemplateId: {templateId} and LoanId: {loanId}",
+						Status = (int)HttpStatusCode.NotFound,
+						Type = "NotFound",
+						Title = "Loan Not Found"
+					});
+				}
 
-        [HttpPost]
-        public async Task<IActionResult> Search(SearchRequestDto searchRequest, CancellationToken cancellationToken = default)
-        {
-            try
-            {
-                var result = await _searchLoanService.Search(searchRequest, cancellationToken);
+				return Ok(loan);
+			}
+			catch (Exception ex)
+			{
+				_searchLogger.LogError(ex, "An error occurred while searching for LoanId: {LoanId} with TemplateId: {TemplateId}", loanId, templateId);
 
-                return Ok(result);
-            }
-            catch (Exception)
-            {
+				throw;
+			}
+		}
 
-                throw;
-            }
-        }
+		[HttpPost("search")]
+		[ProducesResponseType(typeof(SearchResponseDto), (int)HttpStatusCode.OK)]
+		[ProducesResponseType((int)HttpStatusCode.BadRequest)]
+		[ProducesResponseType((int)HttpStatusCode.InternalServerError)]
+		public async Task<ActionResult<SearchResponseDto>> Search(SearchRequestDto searchRequest, CancellationToken cancellationToken = default)
+		{
+			try
+			{
+				_searchLogger.LogDebug("Search called with TemplateId: {TemplateId}", searchRequest.TemplateId);
 
-        [HttpGet("search-filters")]
-        public async Task<ActionResult<SearchFiltersResponseDto>> GetSearchFilters([FromQuery] int templateId, CancellationToken cancellationToken = default)
-        {
-            try
-            {
-                var filters = await _searchLoanService.GetSearchFilters(templateId, cancellationToken);
+				await _searchRequestValidator.ValidateAndThrowAsync(searchRequest, cancellationToken);
 
-                if (filters == null || !filters.Any())
-                {
-                    return NotFound();
-                }
+				var result = await _searchLoanService.Search(searchRequest, cancellationToken);
 
-                var filtersDto = new SearchFiltersResponseDto((Dictionary<string, List<string>>)filters);
+				return Ok(result);
+			}
+			catch (Exception ex)
+			{
+				_searchLogger.LogError(ex, "An error occurred while processing the search request for TemplateId: {TemplateId}", searchRequest.TemplateId);
 
-                return Ok(filters);
-            }
-            catch (Exception)
-            {
+				throw;
+			}
+		}
 
-                throw;
-            }
-        }
-    }
+		[HttpGet("search-filters")]
+		[ProducesResponseType(typeof(SearchFiltersResponseDto), (int)HttpStatusCode.OK)]
+		[ProducesResponseType((int)HttpStatusCode.NotFound)]
+		public async Task<ActionResult<SearchFiltersResponseDto>> GetSearchFilters([FromQuery] int templateId, CancellationToken cancellationToken = default)
+		{
+			try
+			{
+				_searchLogger.LogDebug("GetSearchFilters called with templateId: {TemplateId}", templateId);
+
+				var filters = await _searchLoanService.GetSearchFilters(templateId, cancellationToken);
+
+				if (filters == null || !filters.Any())
+				{
+					return NotFound(new ProblemDetails
+					{
+						Detail = $"No filters found for templateId: {templateId}",
+						Status = (int)HttpStatusCode.NotFound,
+						Type = "NotFound",
+						Title = "Filters Not Found"
+					});
+				}
+
+				var filtersDto = new SearchFiltersResponseDto((Dictionary<string, List<string>>)filters);
+
+				_searchLogger.LogDebug("Retrieved {FilterCount} filters for templateId: {TemplateId}", filters.Count, templateId);
+
+				return Ok(filters);
+			}
+			catch (Exception ex)
+			{
+				_searchLogger.LogError(ex, "An error occurred while retrieving search filters for templateId: {TemplateId}", templateId);
+
+				throw;
+			}
+		}
+	}
 }

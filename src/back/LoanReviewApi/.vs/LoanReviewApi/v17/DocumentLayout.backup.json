@@ -1,46 +1,110 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\fdima\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Projects\\Angular\\angular-intensive-examples\\src\\back\\LoanReviewApi\\",
+  "WorkspaceRootPath": "D:\\Portfolio\\AngularIntensive\\angular-intensive-examples\\src\\back\\LoanReviewApi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A345BBC9-5DEA-410C-B9E6-24A7AA75A046}|LoanReviewApi\\LoanReviewApi.csproj|c:\\users\\fdima\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\projects\\angular\\angular-intensive-examples\\src\\back\\loanreviewapi\\loanreviewapi\\controllers\\importcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A345BBC9-5DEA-410C-B9E6-24A7AA75A046}|LoanReviewApi\\LoanReviewApi.csproj|solutionrelative:loanreviewapi\\controllers\\importcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A345BBC9-5DEA-410C-B9E6-24A7AA75A046}|LoanReviewApi\\LoanReviewApi.csproj|c:\\users\\fdima\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\projects\\angular\\angular-intensive-examples\\src\\back\\loanreviewapi\\loanreviewapi\\controllers\\searchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A345BBC9-5DEA-410C-B9E6-24A7AA75A046}|LoanReviewApi\\LoanReviewApi.csproj|solutionrelative:loanreviewapi\\controllers\\searchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A345BBC9-5DEA-410C-B9E6-24A7AA75A046}|LoanReviewApi\\LoanReviewApi.csproj|c:\\users\\fdima\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\projects\\angular\\angular-intensive-examples\\src\\back\\loanreviewapi\\loanreviewapi\\controllers\\loandetailscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A345BBC9-5DEA-410C-B9E6-24A7AA75A046}|LoanReviewApi\\LoanReviewApi.csproj|solutionrelative:loanreviewapi\\controllers\\loandetailscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1FA04F23-5A7B-4D4B-ACD3-E96527368D4E}|LoanReviewApi.Services\\LoanReviewApi.Services.csproj|c:\\users\\fdima\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\projects\\angular\\angular-intensive-examples\\src\\back\\loanreviewapi\\loanreviewapi.services\\validators\\excelrowvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1FA04F23-5A7B-4D4B-ACD3-E96527368D4E}|LoanReviewApi.Services\\LoanReviewApi.Services.csproj|solutionrelative:loanreviewapi.services\\validators\\excelrowvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A345BBC9-5DEA-410C-B9E6-24A7AA75A046}|LoanReviewApi\\LoanReviewApi.csproj|c:\\users\\fdima\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\projects\\angular\\angular-intensive-examples\\src\\back\\loanreviewapi\\loanreviewapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A345BBC9-5DEA-410C-B9E6-24A7AA75A046}|LoanReviewApi\\LoanReviewApi.csproj|solutionrelative:loanreviewapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A345BBC9-5DEA-410C-B9E6-24A7AA75A046}|LoanReviewApi\\LoanReviewApi.csproj|c:\\users\\fdima\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\projects\\angular\\angular-intensive-examples\\src\\back\\loanreviewapi\\loanreviewapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A345BBC9-5DEA-410C-B9E6-24A7AA75A046}|LoanReviewApi\\LoanReviewApi.csproj|solutionrelative:loanreviewapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{77C4B39D-6C8E-45D1-A471-5D0D547BDBEC}|LoanReviewApi.Infrastructure\\LoanReviewApi.Infrastructure.csproj|c:\\users\\fdima\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\projects\\angular\\angular-intensive-examples\\src\\back\\loanreviewapi\\loanreviewapi.infrastructure\\queryfilters\\loanreviewdetailqueryfilters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{77C4B39D-6C8E-45D1-A471-5D0D547BDBEC}|LoanReviewApi.Infrastructure\\LoanReviewApi.Infrastructure.csproj|solutionrelative:loanreviewapi.infrastructure\\queryfilters\\loanreviewdetailqueryfilters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A345BBC9-5DEA-410C-B9E6-24A7AA75A046}|LoanReviewApi\\LoanReviewApi.csproj|c:\\users\\fdima\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\projects\\angular\\angular-intensive-examples\\src\\back\\loanreviewapi\\loanreviewapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A345BBC9-5DEA-410C-B9E6-24A7AA75A046}|LoanReviewApi\\LoanReviewApi.csproj|solutionrelative:loanreviewapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1FA04F23-5A7B-4D4B-ACD3-E96527368D4E}|LoanReviewApi.Services\\LoanReviewApi.Services.csproj|c:\\users\\fdima\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\projects\\angular\\angular-intensive-examples\\src\\back\\loanreviewapi\\loanreviewapi.services\\search\\searchloanservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1FA04F23-5A7B-4D4B-ACD3-E96527368D4E}|LoanReviewApi.Services\\LoanReviewApi.Services.csproj|d:\\portfolio\\angularintensive\\angular-intensive-examples\\src\\back\\loanreviewapi\\loanreviewapi.services\\search\\searchloanservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1FA04F23-5A7B-4D4B-ACD3-E96527368D4E}|LoanReviewApi.Services\\LoanReviewApi.Services.csproj|solutionrelative:loanreviewapi.services\\search\\searchloanservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{77C4B39D-6C8E-45D1-A471-5D0D547BDBEC}|LoanReviewApi.Infrastructure\\LoanReviewApi.Infrastructure.csproj|c:\\users\\fdima\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\projects\\angular\\angular-intensive-examples\\src\\back\\loanreviewapi\\loanreviewapi.infrastructure\\models\\availablesearchfilters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{72ABEB8E-C11D-42DB-99A3-906F63312D3C}|LoanReviewApi.Core\\LoanReviewApi.Core.csproj|d:\\portfolio\\angularintensive\\angular-intensive-examples\\src\\back\\loanreviewapi\\loanreviewapi.core\\models\\loans\\loanreviewreports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72ABEB8E-C11D-42DB-99A3-906F63312D3C}|LoanReviewApi.Core\\LoanReviewApi.Core.csproj|solutionrelative:loanreviewapi.core\\models\\loans\\loanreviewreports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A345BBC9-5DEA-410C-B9E6-24A7AA75A046}|LoanReviewApi\\LoanReviewApi.csproj|d:\\portfolio\\angularintensive\\angular-intensive-examples\\src\\back\\loanreviewapi\\loanreviewapi\\controllers\\loanreviewdetailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A345BBC9-5DEA-410C-B9E6-24A7AA75A046}|LoanReviewApi\\LoanReviewApi.csproj|solutionrelative:loanreviewapi\\controllers\\loanreviewdetailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A345BBC9-5DEA-410C-B9E6-24A7AA75A046}|LoanReviewApi\\LoanReviewApi.csproj|d:\\portfolio\\angularintensive\\angular-intensive-examples\\src\\back\\loanreviewapi\\loanreviewapi\\controllers\\searchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A345BBC9-5DEA-410C-B9E6-24A7AA75A046}|LoanReviewApi\\LoanReviewApi.csproj|solutionrelative:loanreviewapi\\controllers\\searchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FA04F23-5A7B-4D4B-ACD3-E96527368D4E}|LoanReviewApi.Services\\LoanReviewApi.Services.csproj|d:\\portfolio\\angularintensive\\angular-intensive-examples\\src\\back\\loanreviewapi\\loanreviewapi.services\\loanreview\\loanreviewdetailsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FA04F23-5A7B-4D4B-ACD3-E96527368D4E}|LoanReviewApi.Services\\LoanReviewApi.Services.csproj|solutionrelative:loanreviewapi.services\\loanreview\\loanreviewdetailsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FA04F23-5A7B-4D4B-ACD3-E96527368D4E}|LoanReviewApi.Services\\LoanReviewApi.Services.csproj|d:\\portfolio\\angularintensive\\angular-intensive-examples\\src\\back\\loanreviewapi\\loanreviewapi.services\\interfaces\\iloanreviewdetailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FA04F23-5A7B-4D4B-ACD3-E96527368D4E}|LoanReviewApi.Services\\LoanReviewApi.Services.csproj|solutionrelative:loanreviewapi.services\\interfaces\\iloanreviewdetailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72ABEB8E-C11D-42DB-99A3-906F63312D3C}|LoanReviewApi.Core\\LoanReviewApi.Core.csproj|d:\\portfolio\\angularintensive\\angular-intensive-examples\\src\\back\\loanreviewapi\\loanreviewapi.core\\models\\loans\\loanreviewstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72ABEB8E-C11D-42DB-99A3-906F63312D3C}|LoanReviewApi.Core\\LoanReviewApi.Core.csproj|solutionrelative:loanreviewapi.core\\models\\loans\\loanreviewstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72ABEB8E-C11D-42DB-99A3-906F63312D3C}|LoanReviewApi.Core\\LoanReviewApi.Core.csproj|d:\\portfolio\\angularintensive\\angular-intensive-examples\\src\\back\\loanreviewapi\\loanreviewapi.core\\models\\loans\\loanreviewitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72ABEB8E-C11D-42DB-99A3-906F63312D3C}|LoanReviewApi.Core\\LoanReviewApi.Core.csproj|solutionrelative:loanreviewapi.core\\models\\loans\\loanreviewitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72ABEB8E-C11D-42DB-99A3-906F63312D3C}|LoanReviewApi.Core\\LoanReviewApi.Core.csproj|d:\\portfolio\\angularintensive\\angular-intensive-examples\\src\\back\\loanreviewapi\\loanreviewapi.core\\models\\loans\\loanreviewdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72ABEB8E-C11D-42DB-99A3-906F63312D3C}|LoanReviewApi.Core\\LoanReviewApi.Core.csproj|solutionrelative:loanreviewapi.core\\models\\loans\\loanreviewdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72ABEB8E-C11D-42DB-99A3-906F63312D3C}|LoanReviewApi.Core\\LoanReviewApi.Core.csproj|d:\\portfolio\\angularintensive\\angular-intensive-examples\\src\\back\\loanreviewapi\\loanreviewapi.core\\models\\loans\\loandetailscomm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72ABEB8E-C11D-42DB-99A3-906F63312D3C}|LoanReviewApi.Core\\LoanReviewApi.Core.csproj|solutionrelative:loanreviewapi.core\\models\\loans\\loandetailscomm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72ABEB8E-C11D-42DB-99A3-906F63312D3C}|LoanReviewApi.Core\\LoanReviewApi.Core.csproj|d:\\portfolio\\angularintensive\\angular-intensive-examples\\src\\back\\loanreviewapi\\loanreviewapi.core\\models\\loans\\loandetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72ABEB8E-C11D-42DB-99A3-906F63312D3C}|LoanReviewApi.Core\\LoanReviewApi.Core.csproj|solutionrelative:loanreviewapi.core\\models\\loans\\loandetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77C4B39D-6C8E-45D1-A471-5D0D547BDBEC}|LoanReviewApi.Infrastructure\\LoanReviewApi.Infrastructure.csproj|d:\\portfolio\\angularintensive\\angular-intensive-examples\\src\\back\\loanreviewapi\\loanreviewapi.infrastructure\\queryfilters\\loanreviewdetailqueryfilters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77C4B39D-6C8E-45D1-A471-5D0D547BDBEC}|LoanReviewApi.Infrastructure\\LoanReviewApi.Infrastructure.csproj|solutionrelative:loanreviewapi.infrastructure\\queryfilters\\loanreviewdetailqueryfilters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FA04F23-5A7B-4D4B-ACD3-E96527368D4E}|LoanReviewApi.Services\\LoanReviewApi.Services.csproj|d:\\portfolio\\angularintensive\\angular-intensive-examples\\src\\back\\loanreviewapi\\loanreviewapi.services\\dependencyinjection\\searchserviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FA04F23-5A7B-4D4B-ACD3-E96527368D4E}|LoanReviewApi.Services\\LoanReviewApi.Services.csproj|solutionrelative:loanreviewapi.services\\dependencyinjection\\searchserviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A345BBC9-5DEA-410C-B9E6-24A7AA75A046}|LoanReviewApi\\LoanReviewApi.csproj|d:\\portfolio\\angularintensive\\angular-intensive-examples\\src\\back\\loanreviewapi\\loanreviewapi\\controllers\\importcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A345BBC9-5DEA-410C-B9E6-24A7AA75A046}|LoanReviewApi\\LoanReviewApi.csproj|solutionrelative:loanreviewapi\\controllers\\importcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FA04F23-5A7B-4D4B-ACD3-E96527368D4E}|LoanReviewApi.Services\\LoanReviewApi.Services.csproj|d:\\portfolio\\angularintensive\\angular-intensive-examples\\src\\back\\loanreviewapi\\loanreviewapi.services\\interfaces\\isearchloanservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FA04F23-5A7B-4D4B-ACD3-E96527368D4E}|LoanReviewApi.Services\\LoanReviewApi.Services.csproj|solutionrelative:loanreviewapi.services\\interfaces\\isearchloanservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77C4B39D-6C8E-45D1-A471-5D0D547BDBEC}|LoanReviewApi.Infrastructure\\LoanReviewApi.Infrastructure.csproj|d:\\portfolio\\angularintensive\\angular-intensive-examples\\src\\back\\loanreviewapi\\loanreviewapi.infrastructure\\models\\availablesearchfilters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{77C4B39D-6C8E-45D1-A471-5D0D547BDBEC}|LoanReviewApi.Infrastructure\\LoanReviewApi.Infrastructure.csproj|solutionrelative:loanreviewapi.infrastructure\\models\\availablesearchfilters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A345BBC9-5DEA-410C-B9E6-24A7AA75A046}|LoanReviewApi\\LoanReviewApi.csproj|d:\\portfolio\\angularintensive\\angular-intensive-examples\\src\\back\\loanreviewapi\\loanreviewapi\\dto\\changestatusrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A345BBC9-5DEA-410C-B9E6-24A7AA75A046}|LoanReviewApi\\LoanReviewApi.csproj|solutionrelative:loanreviewapi\\dto\\changestatusrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A345BBC9-5DEA-410C-B9E6-24A7AA75A046}|LoanReviewApi\\LoanReviewApi.csproj|d:\\portfolio\\angularintensive\\angular-intensive-examples\\src\\back\\loanreviewapi\\loanreviewapi\\dto\\searchfiltersresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A345BBC9-5DEA-410C-B9E6-24A7AA75A046}|LoanReviewApi\\LoanReviewApi.csproj|solutionrelative:loanreviewapi\\dto\\searchfiltersresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FA04F23-5A7B-4D4B-ACD3-E96527368D4E}|LoanReviewApi.Services\\LoanReviewApi.Services.csproj|d:\\portfolio\\angularintensive\\angular-intensive-examples\\src\\back\\loanreviewapi\\loanreviewapi.services\\dtos\\loanreviewdetaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FA04F23-5A7B-4D4B-ACD3-E96527368D4E}|LoanReviewApi.Services\\LoanReviewApi.Services.csproj|solutionrelative:loanreviewapi.services\\dtos\\loanreviewdetaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A345BBC9-5DEA-410C-B9E6-24A7AA75A046}|LoanReviewApi\\LoanReviewApi.csproj|d:\\portfolio\\angularintensive\\angular-intensive-examples\\src\\back\\loanreviewapi\\loanreviewapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A345BBC9-5DEA-410C-B9E6-24A7AA75A046}|LoanReviewApi\\LoanReviewApi.csproj|solutionrelative:loanreviewapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A345BBC9-5DEA-410C-B9E6-24A7AA75A046}|LoanReviewApi\\LoanReviewApi.csproj|d:\\portfolio\\angularintensive\\angular-intensive-examples\\src\\back\\loanreviewapi\\loanreviewapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A345BBC9-5DEA-410C-B9E6-24A7AA75A046}|LoanReviewApi\\LoanReviewApi.csproj|solutionrelative:loanreviewapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A345BBC9-5DEA-410C-B9E6-24A7AA75A046}|LoanReviewApi\\LoanReviewApi.csproj|d:\\portfolio\\angularintensive\\angular-intensive-examples\\src\\back\\loanreviewapi\\loanreviewapi\\dependencyinjection\\validatorsregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A345BBC9-5DEA-410C-B9E6-24A7AA75A046}|LoanReviewApi\\LoanReviewApi.csproj|solutionrelative:loanreviewapi\\dependencyinjection\\validatorsregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FA04F23-5A7B-4D4B-ACD3-E96527368D4E}|LoanReviewApi.Services\\LoanReviewApi.Services.csproj|d:\\portfolio\\angularintensive\\angular-intensive-examples\\src\\back\\loanreviewapi\\loanreviewapi.services\\dtos\\searchresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FA04F23-5A7B-4D4B-ACD3-E96527368D4E}|LoanReviewApi.Services\\LoanReviewApi.Services.csproj|solutionrelative:loanreviewapi.services\\dtos\\searchresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FA04F23-5A7B-4D4B-ACD3-E96527368D4E}|LoanReviewApi.Services\\LoanReviewApi.Services.csproj|d:\\portfolio\\angularintensive\\angular-intensive-examples\\src\\back\\loanreviewapi\\loanreviewapi.services\\dtos\\totalitemsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FA04F23-5A7B-4D4B-ACD3-E96527368D4E}|LoanReviewApi.Services\\LoanReviewApi.Services.csproj|solutionrelative:loanreviewapi.services\\dtos\\totalitemsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FA04F23-5A7B-4D4B-ACD3-E96527368D4E}|LoanReviewApi.Services\\LoanReviewApi.Services.csproj|d:\\portfolio\\angularintensive\\angular-intensive-examples\\src\\back\\loanreviewapi\\loanreviewapi.services\\validators\\excelrowvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FA04F23-5A7B-4D4B-ACD3-E96527368D4E}|LoanReviewApi.Services\\LoanReviewApi.Services.csproj|solutionrelative:loanreviewapi.services\\validators\\excelrowvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A345BBC9-5DEA-410C-B9E6-24A7AA75A046}|LoanReviewApi\\LoanReviewApi.csproj|d:\\portfolio\\angularintensive\\angular-intensive-examples\\src\\back\\loanreviewapi\\loanreviewapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A345BBC9-5DEA-410C-B9E6-24A7AA75A046}|LoanReviewApi\\LoanReviewApi.csproj|solutionrelative:loanreviewapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -49,106 +113,223 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "DockedWidth": 197,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AvailableSearchFilters.cs",
-              "DocumentMoniker": "C:\\Users\\fdima\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Projects\\Angular\\angular-intensive-examples\\src\\back\\LoanReviewApi\\LoanReviewApi.Infrastructure\\Models\\AvailableSearchFilters.cs",
-              "RelativeDocumentMoniker": "LoanReviewApi.Infrastructure\\Models\\AvailableSearchFilters.cs",
-              "ToolTip": "C:\\Users\\fdima\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Projects\\Angular\\angular-intensive-examples\\src\\back\\LoanReviewApi\\LoanReviewApi.Infrastructure\\Models\\AvailableSearchFilters.cs",
-              "RelativeToolTip": "LoanReviewApi.Infrastructure\\Models\\AvailableSearchFilters.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAowAwAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T13:07:24.746Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 0,
               "Title": "SearchLoanService.cs",
-              "DocumentMoniker": "C:\\Users\\fdima\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Projects\\Angular\\angular-intensive-examples\\src\\back\\LoanReviewApi\\LoanReviewApi.Services\\Search\\SearchLoanService.cs",
+              "DocumentMoniker": "D:\\Portfolio\\AngularIntensive\\angular-intensive-examples\\src\\back\\LoanReviewApi\\LoanReviewApi.Services\\Search\\SearchLoanService.cs",
               "RelativeDocumentMoniker": "LoanReviewApi.Services\\Search\\SearchLoanService.cs",
-              "ToolTip": "C:\\Users\\fdima\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Projects\\Angular\\angular-intensive-examples\\src\\back\\LoanReviewApi\\LoanReviewApi.Services\\Search\\SearchLoanService.cs",
+              "ToolTip": "D:\\Portfolio\\AngularIntensive\\angular-intensive-examples\\src\\back\\LoanReviewApi\\LoanReviewApi.Services\\Search\\SearchLoanService.cs",
               "RelativeToolTip": "LoanReviewApi.Services\\Search\\SearchLoanService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAgCAAAAAAAAAAAAACACAABUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T18:49:07.78Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "LoanReviewDetailQueryFilters.cs",
-              "DocumentMoniker": "C:\\Users\\fdima\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Projects\\Angular\\angular-intensive-examples\\src\\back\\LoanReviewApi\\LoanReviewApi.Infrastructure\\QueryFilters\\LoanReviewDetailQueryFilters.cs",
-              "RelativeDocumentMoniker": "LoanReviewApi.Infrastructure\\QueryFilters\\LoanReviewDetailQueryFilters.cs",
-              "ToolTip": "C:\\Users\\fdima\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Projects\\Angular\\angular-intensive-examples\\src\\back\\LoanReviewApi\\LoanReviewApi.Infrastructure\\QueryFilters\\LoanReviewDetailQueryFilters.cs",
-              "RelativeToolTip": "LoanReviewApi.Infrastructure\\QueryFilters\\LoanReviewDetailQueryFilters.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-03T15:09:10.661Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\fdima\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Projects\\Angular\\angular-intensive-examples\\src\\back\\LoanReviewApi\\LoanReviewApi\\Program.cs",
-              "RelativeDocumentMoniker": "LoanReviewApi\\Program.cs",
-              "ToolTip": "C:\\Users\\fdima\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Projects\\Angular\\angular-intensive-examples\\src\\back\\LoanReviewApi\\LoanReviewApi\\Program.cs",
-              "RelativeToolTip": "LoanReviewApi\\Program.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAmwEoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-12T15:02:06.758Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SearchController.cs",
-              "DocumentMoniker": "C:\\Users\\fdima\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Projects\\Angular\\angular-intensive-examples\\src\\back\\LoanReviewApi\\LoanReviewApi\\Controllers\\SearchController.cs",
-              "RelativeDocumentMoniker": "LoanReviewApi\\Controllers\\SearchController.cs",
-              "ToolTip": "C:\\Users\\fdima\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Projects\\Angular\\angular-intensive-examples\\src\\back\\LoanReviewApi\\LoanReviewApi\\Controllers\\SearchController.cs",
-              "RelativeToolTip": "LoanReviewApi\\Controllers\\SearchController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABLAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-12T14:40:41.508Z",
+              "WhenOpened": "2025-12-18T13:11:33.59Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 15,
+              "Title": "AvailableSearchFilters.cs",
+              "DocumentMoniker": "D:\\Portfolio\\AngularIntensive\\angular-intensive-examples\\src\\back\\LoanReviewApi\\LoanReviewApi.Infrastructure\\Models\\AvailableSearchFilters.cs",
+              "RelativeDocumentMoniker": "LoanReviewApi.Infrastructure\\Models\\AvailableSearchFilters.cs",
+              "ToolTip": "D:\\Portfolio\\AngularIntensive\\angular-intensive-examples\\src\\back\\LoanReviewApi\\LoanReviewApi.Infrastructure\\Models\\AvailableSearchFilters.cs",
+              "RelativeToolTip": "LoanReviewApi.Infrastructure\\Models\\AvailableSearchFilters.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAQAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T13:07:24.746Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "LoanReviewDetailQueryFilters.cs",
+              "DocumentMoniker": "D:\\Portfolio\\AngularIntensive\\angular-intensive-examples\\src\\back\\LoanReviewApi\\LoanReviewApi.Infrastructure\\QueryFilters\\LoanReviewDetailQueryFilters.cs",
+              "RelativeDocumentMoniker": "LoanReviewApi.Infrastructure\\QueryFilters\\LoanReviewDetailQueryFilters.cs",
+              "ToolTip": "D:\\Portfolio\\AngularIntensive\\angular-intensive-examples\\src\\back\\LoanReviewApi\\LoanReviewApi.Infrastructure\\QueryFilters\\LoanReviewDetailQueryFilters.cs",
+              "RelativeToolTip": "LoanReviewApi.Infrastructure\\QueryFilters\\LoanReviewDetailQueryFilters.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T15:09:10.661Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "SearchServiceRegistration.cs",
+              "DocumentMoniker": "D:\\Portfolio\\AngularIntensive\\angular-intensive-examples\\src\\back\\LoanReviewApi\\LoanReviewApi.Services\\DependencyInjection\\SearchServiceRegistration.cs",
+              "RelativeDocumentMoniker": "LoanReviewApi.Services\\DependencyInjection\\SearchServiceRegistration.cs",
+              "ToolTip": "D:\\Portfolio\\AngularIntensive\\angular-intensive-examples\\src\\back\\LoanReviewApi\\LoanReviewApi.Services\\DependencyInjection\\SearchServiceRegistration.cs",
+              "RelativeToolTip": "LoanReviewApi.Services\\DependencyInjection\\SearchServiceRegistration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-19T12:17:29.132Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ISearchLoanService.cs",
+              "DocumentMoniker": "D:\\Portfolio\\AngularIntensive\\angular-intensive-examples\\src\\back\\LoanReviewApi\\LoanReviewApi.Services\\Interfaces\\ISearchLoanService.cs",
+              "RelativeDocumentMoniker": "LoanReviewApi.Services\\Interfaces\\ISearchLoanService.cs",
+              "ToolTip": "D:\\Portfolio\\AngularIntensive\\angular-intensive-examples\\src\\back\\LoanReviewApi\\LoanReviewApi.Services\\Interfaces\\ISearchLoanService.cs",
+              "RelativeToolTip": "LoanReviewApi.Services\\Interfaces\\ISearchLoanService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-19T12:10:32.234Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LoanReviewDetailsService.cs",
+              "DocumentMoniker": "D:\\Portfolio\\AngularIntensive\\angular-intensive-examples\\src\\back\\LoanReviewApi\\LoanReviewApi.Services\\LoanReview\\LoanReviewDetailsService.cs",
+              "RelativeDocumentMoniker": "LoanReviewApi.Services\\LoanReview\\LoanReviewDetailsService.cs",
+              "ToolTip": "D:\\Portfolio\\AngularIntensive\\angular-intensive-examples\\src\\back\\LoanReviewApi\\LoanReviewApi.Services\\LoanReview\\LoanReviewDetailsService.cs",
+              "RelativeToolTip": "LoanReviewApi.Services\\LoanReview\\LoanReviewDetailsService.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAADwvz8AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-19T12:07:20.591Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ILoanReviewDetailService.cs",
+              "DocumentMoniker": "D:\\Portfolio\\AngularIntensive\\angular-intensive-examples\\src\\back\\LoanReviewApi\\LoanReviewApi.Services\\Interfaces\\ILoanReviewDetailService.cs",
+              "RelativeDocumentMoniker": "LoanReviewApi.Services\\Interfaces\\ILoanReviewDetailService.cs",
+              "ToolTip": "D:\\Portfolio\\AngularIntensive\\angular-intensive-examples\\src\\back\\LoanReviewApi\\LoanReviewApi.Services\\Interfaces\\ILoanReviewDetailService.cs",
+              "RelativeToolTip": "LoanReviewApi.Services\\Interfaces\\ILoanReviewDetailService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-19T12:03:34.921Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "ImportController.cs",
-              "DocumentMoniker": "C:\\Users\\fdima\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Projects\\Angular\\angular-intensive-examples\\src\\back\\LoanReviewApi\\LoanReviewApi\\Controllers\\ImportController.cs",
+              "DocumentMoniker": "D:\\Portfolio\\AngularIntensive\\angular-intensive-examples\\src\\back\\LoanReviewApi\\LoanReviewApi\\Controllers\\ImportController.cs",
               "RelativeDocumentMoniker": "LoanReviewApi\\Controllers\\ImportController.cs",
-              "ToolTip": "C:\\Users\\fdima\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Projects\\Angular\\angular-intensive-examples\\src\\back\\LoanReviewApi\\LoanReviewApi\\Controllers\\ImportController.cs",
+              "ToolTip": "D:\\Portfolio\\AngularIntensive\\angular-intensive-examples\\src\\back\\LoanReviewApi\\LoanReviewApi\\Controllers\\ImportController.cs",
               "RelativeToolTip": "LoanReviewApi\\Controllers\\ImportController.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAAwBcAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-12T14:37:39.614Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Portfolio\\AngularIntensive\\angular-intensive-examples\\src\\back\\LoanReviewApi\\LoanReviewApi\\appsettings.json",
+              "RelativeDocumentMoniker": "LoanReviewApi\\appsettings.json",
+              "ToolTip": "D:\\Portfolio\\AngularIntensive\\angular-intensive-examples\\src\\back\\LoanReviewApi\\LoanReviewApi\\appsettings.json",
+              "RelativeToolTip": "LoanReviewApi\\appsettings.json",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAQwAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-16T14:53:35.75Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SearchController.cs",
+              "DocumentMoniker": "D:\\Portfolio\\AngularIntensive\\angular-intensive-examples\\src\\back\\LoanReviewApi\\LoanReviewApi\\Controllers\\SearchController.cs",
+              "RelativeDocumentMoniker": "LoanReviewApi\\Controllers\\SearchController.cs",
+              "ToolTip": "D:\\Portfolio\\AngularIntensive\\angular-intensive-examples\\src\\back\\LoanReviewApi\\LoanReviewApi\\Controllers\\SearchController.cs",
+              "RelativeToolTip": "LoanReviewApi\\Controllers\\SearchController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABsAAABWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-12T14:40:41.508Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "SearchResponseDto.cs",
+              "DocumentMoniker": "D:\\Portfolio\\AngularIntensive\\angular-intensive-examples\\src\\back\\LoanReviewApi\\LoanReviewApi.Services\\DTOs\\SearchResponseDto.cs",
+              "RelativeDocumentMoniker": "LoanReviewApi.Services\\DTOs\\SearchResponseDto.cs",
+              "ToolTip": "D:\\Portfolio\\AngularIntensive\\angular-intensive-examples\\src\\back\\LoanReviewApi\\LoanReviewApi.Services\\DTOs\\SearchResponseDto.cs",
+              "RelativeToolTip": "LoanReviewApi.Services\\DTOs\\SearchResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T13:12:25.537Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ValidatorsRegistration.cs",
+              "DocumentMoniker": "D:\\Portfolio\\AngularIntensive\\angular-intensive-examples\\src\\back\\LoanReviewApi\\LoanReviewApi\\DependencyInjection\\ValidatorsRegistration.cs",
+              "RelativeDocumentMoniker": "LoanReviewApi\\DependencyInjection\\ValidatorsRegistration.cs",
+              "ToolTip": "D:\\Portfolio\\AngularIntensive\\angular-intensive-examples\\src\\back\\LoanReviewApi\\LoanReviewApi\\DependencyInjection\\ValidatorsRegistration.cs",
+              "RelativeToolTip": "LoanReviewApi\\DependencyInjection\\ValidatorsRegistration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T13:23:06.376Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "TotalItemsDto.cs",
+              "DocumentMoniker": "D:\\Portfolio\\AngularIntensive\\angular-intensive-examples\\src\\back\\LoanReviewApi\\LoanReviewApi.Services\\DTOs\\TotalItemsDto.cs",
+              "RelativeDocumentMoniker": "LoanReviewApi.Services\\DTOs\\TotalItemsDto.cs",
+              "ToolTip": "D:\\Portfolio\\AngularIntensive\\angular-intensive-examples\\src\\back\\LoanReviewApi\\LoanReviewApi.Services\\DTOs\\TotalItemsDto.cs",
+              "RelativeToolTip": "LoanReviewApi.Services\\DTOs\\TotalItemsDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T13:08:27.156Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "SearchFiltersResponseDto.cs",
+              "DocumentMoniker": "D:\\Portfolio\\AngularIntensive\\angular-intensive-examples\\src\\back\\LoanReviewApi\\LoanReviewApi\\DTO\\SearchFiltersResponseDto.cs",
+              "RelativeDocumentMoniker": "LoanReviewApi\\DTO\\SearchFiltersResponseDto.cs",
+              "ToolTip": "D:\\Portfolio\\AngularIntensive\\angular-intensive-examples\\src\\back\\LoanReviewApi\\LoanReviewApi\\DTO\\SearchFiltersResponseDto.cs",
+              "RelativeToolTip": "LoanReviewApi\\DTO\\SearchFiltersResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T13:08:14.783Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Portfolio\\AngularIntensive\\angular-intensive-examples\\src\\back\\LoanReviewApi\\LoanReviewApi\\Program.cs",
+              "RelativeDocumentMoniker": "LoanReviewApi\\Program.cs",
+              "ToolTip": "D:\\Portfolio\\AngularIntensive\\angular-intensive-examples\\src\\back\\LoanReviewApi\\LoanReviewApi\\Program.cs",
+              "RelativeToolTip": "LoanReviewApi\\Program.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAkwDEAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-12T15:02:06.758Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "LoanDetailsController.cs",
-              "DocumentMoniker": "C:\\Users\\fdima\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Projects\\Angular\\angular-intensive-examples\\src\\back\\LoanReviewApi\\LoanReviewApi\\Controllers\\LoanDetailsController.cs",
-              "RelativeDocumentMoniker": "LoanReviewApi\\Controllers\\LoanDetailsController.cs",
-              "ToolTip": "C:\\Users\\fdima\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Projects\\Angular\\angular-intensive-examples\\src\\back\\LoanReviewApi\\LoanReviewApi\\Controllers\\LoanDetailsController.cs",
-              "RelativeToolTip": "LoanReviewApi\\Controllers\\LoanDetailsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Title": "LoanReviewDetailController.cs",
+              "DocumentMoniker": "D:\\Portfolio\\AngularIntensive\\angular-intensive-examples\\src\\back\\LoanReviewApi\\LoanReviewApi\\Controllers\\LoanReviewDetailController.cs",
+              "RelativeDocumentMoniker": "LoanReviewApi\\Controllers\\LoanReviewDetailController.cs",
+              "ToolTip": "D:\\Portfolio\\AngularIntensive\\angular-intensive-examples\\src\\back\\LoanReviewApi\\LoanReviewApi\\Controllers\\LoanReviewDetailController.cs",
+              "RelativeToolTip": "LoanReviewApi\\Controllers\\LoanReviewDetailController.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAIwBUAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-12T14:38:41.497Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 24,
               "Title": "ExcelRowValidator.cs",
-              "DocumentMoniker": "C:\\Users\\fdima\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Projects\\Angular\\angular-intensive-examples\\src\\back\\LoanReviewApi\\LoanReviewApi.Services\\Validators\\ExcelRowValidator.cs",
+              "DocumentMoniker": "D:\\Portfolio\\AngularIntensive\\angular-intensive-examples\\src\\back\\LoanReviewApi\\LoanReviewApi.Services\\Validators\\ExcelRowValidator.cs",
               "RelativeDocumentMoniker": "LoanReviewApi.Services\\Validators\\ExcelRowValidator.cs",
-              "ToolTip": "C:\\Users\\fdima\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Projects\\Angular\\angular-intensive-examples\\src\\back\\LoanReviewApi\\LoanReviewApi.Services\\Validators\\ExcelRowValidator.cs",
+              "ToolTip": "D:\\Portfolio\\AngularIntensive\\angular-intensive-examples\\src\\back\\LoanReviewApi\\LoanReviewApi.Services\\Validators\\ExcelRowValidator.cs",
               "RelativeToolTip": "LoanReviewApi.Services\\Validators\\ExcelRowValidator.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -156,27 +337,126 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 25,
               "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\fdima\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Projects\\Angular\\angular-intensive-examples\\src\\back\\LoanReviewApi\\LoanReviewApi\\Properties\\launchSettings.json",
+              "DocumentMoniker": "D:\\Portfolio\\AngularIntensive\\angular-intensive-examples\\src\\back\\LoanReviewApi\\LoanReviewApi\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "LoanReviewApi\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\fdima\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Projects\\Angular\\angular-intensive-examples\\src\\back\\LoanReviewApi\\LoanReviewApi\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\Portfolio\\AngularIntensive\\angular-intensive-examples\\src\\back\\LoanReviewApi\\LoanReviewApi\\Properties\\launchSettings.json",
               "RelativeToolTip": "LoanReviewApi\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACAAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAIBHwCAAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-12-16T14:56:16.361Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 203,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "LoanReviewDetailDto.cs",
+              "DocumentMoniker": "D:\\Portfolio\\AngularIntensive\\angular-intensive-examples\\src\\back\\LoanReviewApi\\LoanReviewApi.Services\\DTOs\\LoanReviewDetailDto.cs",
+              "RelativeDocumentMoniker": "LoanReviewApi.Services\\DTOs\\LoanReviewDetailDto.cs",
+              "ToolTip": "D:\\Portfolio\\AngularIntensive\\angular-intensive-examples\\src\\back\\LoanReviewApi\\LoanReviewApi.Services\\DTOs\\LoanReviewDetailDto.cs",
+              "RelativeToolTip": "LoanReviewApi.Services\\DTOs\\LoanReviewDetailDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T15:29:19.075Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LoanReviewStatus.cs",
+              "DocumentMoniker": "D:\\Portfolio\\AngularIntensive\\angular-intensive-examples\\src\\back\\LoanReviewApi\\LoanReviewApi.Core\\Models\\Loans\\LoanReviewStatus.cs",
+              "RelativeDocumentMoniker": "LoanReviewApi.Core\\Models\\Loans\\LoanReviewStatus.cs",
+              "ToolTip": "D:\\Portfolio\\AngularIntensive\\angular-intensive-examples\\src\\back\\LoanReviewApi\\LoanReviewApi.Core\\Models\\Loans\\LoanReviewStatus.cs",
+              "RelativeToolTip": "LoanReviewApi.Core\\Models\\Loans\\LoanReviewStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-19T15:23:27.414Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoanReviewReports.cs",
+              "DocumentMoniker": "D:\\Portfolio\\AngularIntensive\\angular-intensive-examples\\src\\back\\LoanReviewApi\\LoanReviewApi.Core\\Models\\Loans\\LoanReviewReports.cs",
+              "RelativeDocumentMoniker": "LoanReviewApi.Core\\Models\\Loans\\LoanReviewReports.cs",
+              "ToolTip": "D:\\Portfolio\\AngularIntensive\\angular-intensive-examples\\src\\back\\LoanReviewApi\\LoanReviewApi.Core\\Models\\Loans\\LoanReviewReports.cs",
+              "RelativeToolTip": "LoanReviewApi.Core\\Models\\Loans\\LoanReviewReports.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-19T15:23:25.81Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "LoanReviewDetail.cs",
+              "DocumentMoniker": "D:\\Portfolio\\AngularIntensive\\angular-intensive-examples\\src\\back\\LoanReviewApi\\LoanReviewApi.Core\\Models\\Loans\\LoanReviewDetail.cs",
+              "RelativeDocumentMoniker": "LoanReviewApi.Core\\Models\\Loans\\LoanReviewDetail.cs",
+              "ToolTip": "D:\\Portfolio\\AngularIntensive\\angular-intensive-examples\\src\\back\\LoanReviewApi\\LoanReviewApi.Core\\Models\\Loans\\LoanReviewDetail.cs",
+              "RelativeToolTip": "LoanReviewApi.Core\\Models\\Loans\\LoanReviewDetail.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAiwDEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T13:29:13.14Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\fdima\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Projects\\Angular\\angular-intensive-examples\\src\\back\\LoanReviewApi\\LoanReviewApi\\appsettings.json",
-              "RelativeDocumentMoniker": "LoanReviewApi\\appsettings.json",
-              "ToolTip": "C:\\Users\\fdima\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Projects\\Angular\\angular-intensive-examples\\src\\back\\LoanReviewApi\\LoanReviewApi\\appsettings.json",
-              "RelativeToolTip": "LoanReviewApi\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-12-16T14:53:35.75Z"
+              "Title": "LoanReviewItem.cs",
+              "DocumentMoniker": "D:\\Portfolio\\AngularIntensive\\angular-intensive-examples\\src\\back\\LoanReviewApi\\LoanReviewApi.Core\\Models\\Loans\\LoanReviewItem.cs",
+              "RelativeDocumentMoniker": "LoanReviewApi.Core\\Models\\Loans\\LoanReviewItem.cs",
+              "ToolTip": "D:\\Portfolio\\AngularIntensive\\angular-intensive-examples\\src\\back\\LoanReviewApi\\LoanReviewApi.Core\\Models\\Loans\\LoanReviewItem.cs",
+              "RelativeToolTip": "LoanReviewApi.Core\\Models\\Loans\\LoanReviewItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T15:29:40.625Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ChangeStatusRequestDto.cs",
+              "DocumentMoniker": "D:\\Portfolio\\AngularIntensive\\angular-intensive-examples\\src\\back\\LoanReviewApi\\LoanReviewApi\\DTO\\ChangeStatusRequestDto.cs",
+              "RelativeDocumentMoniker": "LoanReviewApi\\DTO\\ChangeStatusRequestDto.cs",
+              "ToolTip": "D:\\Portfolio\\AngularIntensive\\angular-intensive-examples\\src\\back\\LoanReviewApi\\LoanReviewApi\\DTO\\ChangeStatusRequestDto.cs",
+              "RelativeToolTip": "LoanReviewApi\\DTO\\ChangeStatusRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-19T11:58:10.749Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "LoanDetailsComm.cs",
+              "DocumentMoniker": "D:\\Portfolio\\AngularIntensive\\angular-intensive-examples\\src\\back\\LoanReviewApi\\LoanReviewApi.Core\\Models\\Loans\\LoanDetailsComm.cs",
+              "RelativeDocumentMoniker": "LoanReviewApi.Core\\Models\\Loans\\LoanDetailsComm.cs",
+              "ToolTip": "D:\\Portfolio\\AngularIntensive\\angular-intensive-examples\\src\\back\\LoanReviewApi\\LoanReviewApi.Core\\Models\\Loans\\LoanDetailsComm.cs",
+              "RelativeToolTip": "LoanReviewApi.Core\\Models\\Loans\\LoanDetailsComm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-19T15:23:12.023Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "LoanDetail.cs",
+              "DocumentMoniker": "D:\\Portfolio\\AngularIntensive\\angular-intensive-examples\\src\\back\\LoanReviewApi\\LoanReviewApi.Core\\Models\\Loans\\LoanDetail.cs",
+              "RelativeDocumentMoniker": "LoanReviewApi.Core\\Models\\Loans\\LoanDetail.cs",
+              "ToolTip": "D:\\Portfolio\\AngularIntensive\\angular-intensive-examples\\src\\back\\LoanReviewApi\\LoanReviewApi.Core\\Models\\Loans\\LoanDetail.cs",
+              "RelativeToolTip": "LoanReviewApi.Core\\Models\\Loans\\LoanDetail.cs",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAAAEMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T14:52:25.49Z",
+              "EditorCaption": ""
             }
           ]
         }

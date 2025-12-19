@@ -18,38 +18,107 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Collections.Generic.List\u00601[[LoanReviewApi.Services.Models.FailedImportLoanData, LoanReviewApi.Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      },
+      {
+        "Type": "System.Object",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      }
+    ]
   },
   {
-    "ContainingType": "LoanReviewApi.Controllers.SearchController",
-    "Method": "SearchLoanById",
-    "RelativePath": "api/Search",
-    "HttpMethod": "GET",
+    "ContainingType": "LoanReviewApi.Controllers.LoanReviewDetailController",
+    "Method": "ChangeLoanReviewStatus",
+    "RelativePath": "api/LoanReviewDetail/ChangeLoanReviewStatus",
+    "HttpMethod": "PATCH",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "loanDetailId",
-        "Type": "System.Int32",
-        "IsRequired": false
+        "Name": "changeStatusRequest",
+        "Type": "LoanReviewApi.DTO.ChangeStatusRequestDto",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "LoanReviewApi.Services.DTOs.LoanReviewDetailDto",
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "LoanReviewApi.Controllers.LoanReviewDetailController",
+    "Method": "DeleteLoanReview",
+    "RelativePath": "api/LoanReviewDetail/delete-loan-review/{templateId}/{loanId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "templateId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "loanId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
         "MediaTypes": [
           "text/plain",
           "application/json",
           "text/json"
         ],
         "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
       }
     ]
   },
   {
     "ContainingType": "LoanReviewApi.Controllers.SearchController",
     "Method": "Search",
-    "RelativePath": "api/Search",
+    "RelativePath": "api/Search/search",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -60,7 +129,31 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "LoanReviewApi.Services.DTOs.SearchResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
   },
   {
     "ContainingType": "LoanReviewApi.Controllers.SearchController",
@@ -85,6 +178,55 @@
           "text/json"
         ],
         "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      }
+    ]
+  },
+  {
+    "ContainingType": "LoanReviewApi.Controllers.SearchController",
+    "Method": "SearchLoanById",
+    "RelativePath": "api/Search/search-loan-by-id/{templateId}/{loanId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "templateId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "loanId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "LoanReviewApi.Services.DTOs.LoanReviewDetailDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
       }
     ]
   }
